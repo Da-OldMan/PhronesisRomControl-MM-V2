@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_items">
+        <item>Light theme</item>
+        <item>Dark theme</item>
+    </string-array>
+    <string-array name="backup_restore_items">
+        <item>Backup data</item>
+        <item>Restore data</item>
+    </string-array>
+    <string-array name="thumbnail_items">
+        <item>Icon 1</item>
+        <item>Icon 2</item>
+    </string-array>
+    <string-array name="thumbnail_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <array name="thumbnail_drawables">
+        <item>@drawable/icon_6</item>
+        <item>@drawable/icon_5</item>
+    </array>
+    <string-array name="changelog_items">
+        <item>Phronesis V1.0 for MM release</item>
+        <item> </item>
+        <item>Whole new rom control app</item>
+        <item>All options re-written and optimised</item>
+        <item>And another changelog thing ;lsj; lkjs ;lkj ; lkj;lsjk ;sklj s;lkj s;lk js;lkj s;lkj</item>
+        <item>How many changelog things</item>
+        <item>What a long changelog!!!</item>
+        <item>Is it twenty already?</item>
+        <item>Are we there yet?</item>
+        <item>Live long and prosper</item>
+        <item>So say we all</item>
+        <item>Patience you must have</item>
+        <item>Great scot!!!</item>
+        <item>No disassemble…</item>
+        <item>Almost there</item>
+        <item>Done with changelog</item>
+    </string-array>
+    <array name="about_contact_us_drawables">
+        <item>@drawable/icon_2</item>
+        <item>@drawable/icon_1</item>
+        <item>@drawable/icon_3</item>
+    </array>
+    <string-array name="about_contact_us_text">
+        <item>Facebook</item>
+        <item>Our Site</item>
+        <item>XDA</item>
+    </string-array>
+    <string-array name="about_contact_us_links">
+        <item>https://www.facebook.com/</item>
+        <item>https://www.google.com/</item>
+        <item>http://forum.xda-developers.com/galaxy-note-3/development/rom-phronesis-mm-rom-v1-feature-rich-t3400809</item>
+    </string-array>
+    <array name="about_team_drawables">
+        <item>@drawable/icon_5</item>
+        <item>@drawable/icon_6</item>
+        <item>@drawable/icon_1</item>
+    </array>
+    <string-array name="about_team_names">
+        <item>Oluwaponmile - The main rom developer</item>
+        <item>DaOldMan - Rom Control programmer, Modder and Xda Support</item>
+        <item>Filchi - Themer and Modder</item>
+        <item>Logel - Beta tester and Xda support</item>
+    </string-array>
+    <string-array name="about_team_links">
+        <item>https://www.facebook.com/</item>
+        <item>https://www.google.com/</item>
+        <item>http://forum.xda-developers.com/</item>
+    </string-array>
+    <array name="about_credits_drawables">
+        <item>@drawable/icon_1</item>
+        <item>@drawable/icon_3</item>
+        <item>@drawable/icon_4</item>
+        <item>@drawable/icon_2</item>
+        <item>@drawable/icon_6</item>
+        <item>@drawable/icon_5</item>
+    </array>
+    <string-array name="about_credits_names">
+        <item>Star Trek - for being ultimately better than Star Wars</item>
+        <item>Jean-Luc Picard - for making us crave hot earl-grey tea even in the middle of the summer</item>
+        <item>Data - for running on the best rom. Google, we still are waiting for THAT android version</item>
+        <item>Janeway - for being a normal person and drinking black coffee</item>
+        <item>Q - for reminding us that you can live forever and still look great</item>
+        <item>Worf - for teaching us to love Klingons. It was NOT easy</item>
+    </string-array>
+    <string-array name="about_credits_links">
+        <item>https://www.facebook.com/</item>
+        <item>https://www.google.com/</item>
+        <item>http://forum.xda-developers.com/</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.google.com/</item>
+        <item>http://forum.xda-developers.com/</item>
+    </string-array>
+    <string-array name="custom_bg_type_entries">
+        <item>Image</item>
+        <item>Solid color</item>
+        <item>Gradient</item>
+    </string-array>
+    <string-array name="custom_bg_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="gradient_entries">
+        <item>Top to bottom</item>
+        <item>Bottom to top</item>
+        <item>Left to right</item>
+        <item>Right to left</item>
+
+    </string-array>
+    <string-array name="gradient_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
+    <string-array name="crop_entries">
+        <item>Center crop</item>
+        <item>Center inside</item>
+        <item>Fit XY</item>
+    </string-array>
+    <string-array name="crop_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="SignalPositionName">
+        <item>Right</item>
+        <item>Left</item>
+    </string-array>
+    <string-array name="SignalPositionValue">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="immersive_entries">
+        <item>Immersive Off (Default)</item>
+        <item>Immersive On (FullScreen)</item>
+    </string-array>
+    <string-array name="immersive_values">
+        <item>immersive.full</item>
+        <item>immersive.full=*</item>
+    </string-array>
+    <string-array name="dsb_gradient_filter_entries">
+        <item>@string/dsb_gradient_filter_value_0</item>
+        <item>@string/dsb_gradient_filter_value_1</item>
+        <item>@string/dsb_gradient_filter_value_2</item>
+        <item>@string/dsb_gradient_filter_value_3</item>
+    </string-array>
+    <string-array name="dsb_gradient_filter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="battery_bar_entries">
+        <item>Hide</item>
+        <item>Show</item>
+    </string-array>
+    <string-array name="battery_bar_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>Regular</item>
+        <item>Center-mirrored</item>
+    </string-array>
+    <string-array name="battery_bar_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_thickness_entries">
+        <item>1 dp</item>
+        <item>2 dp</item>
+        <item>3 dp</item>
+        <item>4 dp</item>
+    </string-array>
+    <string-array name="battery_bar_thickness_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="traffic_entries">
+        <item>Disabled</item>
+        <item>Outgoing</item>
+        <item>Incoming</item>
+        <item>Show Both</item>
+    </string-array>
+    <string-array name="traffic_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="traffic_update_entries">
+        <item>500 ms</item>
+        <item>1000 ms</item>
+        <item>1500 ms</item>
+        <item>2000 ms</item>
+    </string-array>
+    <string-array name="traffic_update_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+    <string-array name="StatusAppListColumnName">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="StatusAppListColumnValue">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="toggle_entries">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="toggle_values">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="toggle_scroll_entries">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="toggle_scroll_values">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="toggle_buttons_background_entries">
+        <item>Default</item>
+        <item>Convex</item>
+        <item>Concave</item>
+        <item>Glass</item>
+        <item>Convex square</item>
+        <item>Concave square</item>
+        <item>Glass square</item>
+        <item>Realms</item>
+        <item>Magnifying glass</item>
+        <item>Dark light</item>
+        <item>Metal</item>
+        <item>Leather</item>
+        <item>Leather rounded</item>
+        <item>Leather round</item>
+    </string-array>
+    <string-array name="toggle_buttons_background_values">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <array name="toggle_buttons_background_drawables">
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_default</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_convex</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_concave</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_glass</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_convex_square</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_concave_square</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_glass_square</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_realms</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_magnifying_glass</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_dark_light</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_metal</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather_rounded</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather_round</item>
+    </array>
+    <string-array name="visualizer_style_entries">
+        <item>Hide</item>
+        <item>Random</item>
+        <item>Circular</item>
+        <item>Lines</item>
+        <item>Top Bottom Graphic</item>
+        <item>Circle</item>
+        <item>Cycle Color Graphic</item>
+        <item>CyanogenMod</item>
+    </string-array>
+    <string-array name="visualizer_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="LockScreenTorchTimeoutName">
+        <item>15 second</item>
+        <item>30 second</item>
+        <item>1 Minute</item>
+        <item>2 Minute</item>
+        <item>10 Minute</item>
+    </string-array>
+    <string-array name="LockScreenTorchTimeoutValue">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>600000</item>
+    </string-array>
+    <string-array name="CallDelayName">
+        <item>No delay</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="CallDelayValue">
+        <item>0</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+    <string-array name="incoming_call_flashlight_freqentries">
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="incoming_call_flashlight_freqvalues">
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="listview_animation_entries">
+        <item>@string/listview_off</item>
+        <item>@string/listview_wave_left</item>
+        <item>@string/listview_wave_right</item>
+        <item>@string/listview_scale</item>
+        <item>@string/listview_alpha</item>
+        <item>@string/listview_stack_top</item>
+        <item>@string/listview_stack_bottom</item>
+        <item>@string/listview_unfold</item>
+        <item>@string/listview_fold</item>
+        <item>@string/listview_translate_left</item>
+        <item>@string/listview_translate_right</item>
+        <item>@string/listview_rotate</item>
+    </string-array>
+    <string-array name="listview_animation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="listview_interpolator_entries">
+        <item>@string/listview_off</item>
+        <item>@string/listview_accelerate_interpolator</item>
+        <item>@string/listview_decelerate_interpolator</item>
+        <item>@string/listview_accelerate_decelerate_interpolator</item>
+        <item>@string/listview_anticipate_interpolator</item>
+        <item>@string/listview_overshoot_interpolator</item>
+        <item>@string/listview_anticipate_overshoot_interpolator</item>
+        <item>@string/listview_bounce_interpolator</item>
+    </string-array>
+    <string-array name="listview_interpolator_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="tw_effect_entries">
+        <item>None</item>
+        <item>Cascade</item>
+        <item>Outer cube</item>
+        <item>Inner Cube</item>
+        <item>Carousal</item>
+        <item>Plain</item>
+        <item>Conveyor</item>
+        <item>Card</item>
+    </string-array>
+    <string-array name="tw_effect_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="dashboard_num_columns_entries">
+        <item>1 Columns</item>
+        <item>2 Columns</item>
+    </string-array>
+    <string-array name="dashboard_num_columns_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="lockscreen_notif_entries">
+        <item>2 (Stock)</item>
+        <item>3 max shown</item>
+        <item>4 max shown</item>
+        <item>5 max shown</item>
+    </string-array>
+    <string-array name="lockscreen_notif_values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="lockscreen_font_style_entries">
+        <item>Android Clock</item>
+        <item>Android Clock Highlight</item>
+        <item>Android Clock Solid</item>
+        <item>Archibald</item>
+        <item>Caviar Dreams</item>
+        <item>Choco Cooky</item>
+        <item>Cutive Mono</item>
+        <item>Cool Jazz</item>
+        <item>Rosemary</item>
+        <item>Ultima</item>
+    </string-array>
+    <string-array name="lockscreen_font_style_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="sweep_keyguard_action">
+        <item>Turn off screen</item>
+        <item>Launch power menu</item>
+        <item>Volume menu: sound / vibrate / silent</item>
+        <item>Flashlight ON / OFF</item>
+        <item>Screenshots</item>
+        <item>Launch Camera</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="sweep_keyguard_values">
+        <item>0</item>
+        <item>1</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+        <item>101</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="sweep_action">
+        <item>Screen off</item>
+        <item>Show power menu</item>
+        <item>Back key</item>
+        <item>HOME key</item>
+        <item>Recent task</item>
+        <item>Menu key</item>
+        <item>Volume up</item>
+        <item>Volume down</item>
+        <item>Dialer</item>
+        <item>Search in-focus app</item>
+        <item>Volume menu: sound / vibrate / silent</item>
+        <item>Kill current app</item>
+        <item>Flashlight ON / OFF</item>
+        <item>Launch Camera</item>
+        <item>Multiwindow</item>
+        <item>Screenshots</item>
+        <item>Custom Application</item>
+    </string-array>
+    <string-array name="sweep_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>101</item>
+        <item>102</item>
+        <item>999</item>
+        <item>888</item>
+    </string-array>
+    <string-array name="key_longpress_actions">
+        <item>Back</item>
+        <item>Recent Task</item>
+        <item>Menu</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Search</item>
+        <item>Volume Control: normal/vibration/mute</item>
+        <item>End Current Process</item>
+        <item>Flashlight ON/OFF</item>
+        <item>Screenshots</item>
+        <item>Camera</item>
+        <item>Split-screen multitasking</item>
+        <item>Custom Application</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="key_longpress_action_values">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>101</item>
+        <item>102</item>
+        <item>888</item>
+        <item>999</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="home_tripletap_actions">
+        <item>Disable</item>
+        <item>Back</item>
+        <item>HOME</item>
+        <item>Recent Task</item>
+        <item>Menu</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Search in-focus App</item>
+        <item>Volume: normal/vibration/mute</item>
+        <item>End Current Process</item>
+        <item>Flashlight ON/OFF</item>
+        <item>Screenshots</item>
+        <item>Camera</item>
+        <item>Split-screen multitasking</item>
+        <item>Custom Application</item>
+    </string-array>
+    <string-array name="home_tripletap_action_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>101</item>
+        <item>102</item>
+        <item>888</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="key_longpress_actions_nohome">
+        <item>Screen OFF</item>
+        <item>Power Menu</item>
+        <item>Back</item>
+        <item>HOME</item>
+        <item>Recent Task</item>
+        <item>Menu</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Search in-focus App</item>
+        <item>Volume: normal/vibration/mute</item>
+        <item>End Current Process</item>
+        <item>Flashlight ON/OFF</item>
+        <item>Screenshots</item>
+        <item>Camera</item>
+        <item>Split-screen multitasking</item>
+        <item>Custom Application</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="key_longpress_action_values_nohome">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>101</item>
+        <item>102</item>
+        <item>888</item>
+        <item>999</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="virtual_key_longpress_actions">
+        <item>Screen off</item>
+        <item>Power Menu</item>
+        <item>Back</item>
+        <item>HOME</item>
+        <item>Recent Task</item>
+        <item>Menu</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Search in-focus App</item>
+        <item>Sound: normal / vibrate / mute</item>
+        <item>End current app</item>
+        <item>Flashlight ON / OFF</item>
+        <item>Screenshots</item>
+        <item>Custom application</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="virtual_key_longpress_action_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>888</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="launcher_gesture_entries">
+        <item>Screen Off</item>
+        <item>Power Menu</item>
+        <item>Recent Tasks</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Google search</item>
+        <item>Sound Mode: Sound / Vibration / Silent</item>
+        <item>Torchlight</item>
+        <item>Screenshot</item>
+        <item>Notifications panel</item>
+        <item>Switch Wi-Fi</item>
+        <item>Switch Mobile data</item>
+        <item>Switch Bluetooth</item>
+        <item>Clear memory</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="launcher_gesture_values">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>23</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="volbtn_action_entries">
+        <item>Next</item>
+        <item>Pause</item>
+        <item>Previous</item>
+        <item>Stop</item>
+    </string-array>
+    <string-array name="volbtn_action_values">
+        <item>87</item>
+        <item>127</item>
+        <item>88</item>
+        <item>86</item>
+    </string-array>
+    <string-array name="volbtn_timeout_entries">
+        <item>100ms</item>
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>250ms</item>
+        <item>300ms</item>
+        <item>350ms</item>
+        <item>400ms</item>
+        <item>450ms</item>
+        <item>500ms</item>
+    </string-array>
+    <string-array name="volbtn_timeout_values">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+</resources>

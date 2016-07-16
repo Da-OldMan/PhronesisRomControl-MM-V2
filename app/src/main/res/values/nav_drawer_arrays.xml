@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="nav_menu_prefs_drawables">
+        <item>@drawable/ic_menu_statusbar</item>
+        <item>@drawable/ic_notification_panel</item>
+        <item>@drawable/ic_phone</item>
+        <item>@drawable/ic_lockscren</item>
+        <item>@drawable/ic_save_black_24dp</item>
+        <item>@drawable/ic_touch_app_black_24dp</item>
+        <item>@drawable/ic_wifi_tethering_black_24dp</item>
+        <item>@drawable/ic_headset_black_24dp</item>
+        <item>@drawable/ic_widgets_black_24dp</item>
+        <item>@drawable/ic_build_black_24dp</item>
+    </array>
+
+    <string-array name="nav_menu_prefs_titles">
+        <item>@string/statusbar_prefs</item>
+        <item>@string/notification_panel_prefs</item>
+        <item>@string/phone_prefs</item>
+        <item>@string/lockscreen_prefs</item>
+        <item>@string/backup_device_prefs</item>
+        <item>@string/buttons_swipe_prefs</item>
+        <item>@string/adv_device_mods_prefs</item>
+        <item>@string/sound_mod_panel_prefs</item>
+        <item>@string/usefull_apps_prefs</item>
+        <item>@string/utilites_prefs</item>
+    </string-array>
+
+    <string-array name="nav_menu_xml_file_names" translatable="false">
+        <item>statusbar_prefs</item>
+        <item>notification_prefs</item>
+        <item>phone_prefs</item>
+        <item>lockscreen_prefs</item>
+        <item>backup_device_prefs</item>
+        <item>buttons_swipe_prefs</item>
+        <item>adv_device_mods_prefs</item>
+        <item>sound_mod_panel_prefs</item>
+        <item>usefull_apps_prefs</item>
+        <item>utilites_prefs</item>
+    </string-array>
+</resources>

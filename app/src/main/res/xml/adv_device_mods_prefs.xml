@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phronesis="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="SystemUI Preference. Auto Hot Reboot">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Round corner notifications and recent tasks"
+            android:title="Round SystemUI"
+            phronesis:scriptFileName="mmround.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Square corner notifications and recent tasks"
+            android:title="Square SystemUI"
+            phronesis:scriptFileName="mmsquare.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Not suitable for Samsung Themes"
+            android:title="SystemUI with Notification Panel color mods"
+            phronesis:scriptFileName="notificolormods.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Not a single mod"
+            android:title="Pure Stock SystemUI"
+            phronesis:scriptFileName="pstock.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
+    <PreferenceCategory android:title="Frameworks Preference (Auto Hot Reboot)">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="Round corner frame panel"
+            phronesis:scriptFileName="moddedframe.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="Stock frames"
+            phronesis:scriptFileName="stockframe.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
+    <PreferenceCategory android:title="Samsung Keyboard Preference (Auto Hot Reboot)">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="Samsung Keyboard v2.5"
+            phronesis:scriptFileName="keyboard250.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="No Hand Writing"
+            android:title="Samsung Keyboard v3"
+            phronesis:scriptFileName="keyboard300.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
+    <PreferenceCategory android:title="Left Softkey ShortPress (Auto Hot Reboot)">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="LongPress Customisable"
+            android:title="Map to Recent Task"
+            phronesis:scriptFileName="keymaprecent.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="LongPress bound to SFinder"
+            android:title="Map to Menu"
+            phronesis:scriptFileName="keymapmenu.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
+    <PreferenceCategory android:title="Boot Sound">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:title="Disable Boot Sound"
+            phronesis:scriptFileName="disbtsnds.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:title="Enable Boot Sound"
+            phronesis:scriptFileName="enbtsnds.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Volume slider Sound">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:title="Disable Volume Slider Sound"
+            phronesis:scriptFileName="disvolsnds.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:title="Enable Volume Slider Sound"
+            phronesis:scriptFileName="envolsnds.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Battery Sound">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:title="Disable Low Battery Sound"
+            phronesis:scriptFileName="dislowbatsnd.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:title="Enable Low Battery Sound"
+            phronesis:scriptFileName="enlowbatsnd.sh" />
+    </PreferenceCategory>
+</PreferenceScreen>

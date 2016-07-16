@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phronesis="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Advanced Phone settings" />
+    <PreferenceScreen
+        android:summary="System enhancement options"
+        android:title="Enhanced Settings">
+        <PreferenceCategory android:title="Enhanced Settings" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="phronesis_capture_screen_sound"
+            android:summary="Make a sound when taking a Screenshot"
+            android:summaryOff="Screenshot Sound Disabled"
+            android:summaryOn="Screenshot Sound Enabled"
+            android:title="Screenshot Sound" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="torchlight_enable"
+            android:summary="When the screen is locked Press the volume button to turn on or switch off the flashlight"
+            android:summaryOff="Lock screen flashlight disabled"
+            android:summaryOn="Lock screen flashlight enabled"
+            android:title="Lock screen flashlight" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:defaultValue="30000"
+            android:dependency="torchlight_enable"
+            android:entries="@array/LockScreenTorchTimeoutName"
+            android:entryValues="@array/LockScreenTorchTimeoutValue"
+            android:key="torchlight_timeout"
+            android:summary="Flashlight auto-off time set"
+            android:title="Lock screen flashlight timeout" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="email_security"
+            android:summaryOff="Security is Enabled"
+            android:summaryOn="Security is Disabled "
+            android:title="Samsung Email Exchange Security Policy Mod" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Customize the Power Menu Types and Items"
+        android:title="Advanced Power Menu">
+        <PreferenceCategory android:title="Advanced Power Menu Display Type">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="phronesis_power_menu_mode"
+                android:summary="Use new MM power menu"
+                android:summaryOff="Lollipop Style Enabled"
+                android:summaryOn="MM Style Enabled"
+                android:title="Power Menu Style" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Advanced Power Menu">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="killprocess_power_menu_power"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Shutdown" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="killprocess_power_menu_data"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Data Network" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="killprocess_power_menu_airplane"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Flight mode (Not applicable to MM Style)" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="killprocess_power_menu_restart"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Restart" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="killprocess_power_menu_screenshot"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Screenshots" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="killprocess_power_menu_flashlight"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Flashlight" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="killprocess_power_menu_screenrecord"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Screen Recorder" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="killprocess_power_menu_emergency"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Emergency Mode" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="killprocess_power_menu_mode"
+                android:summary=""
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Ringtone mode option (Not for MM Style)" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Advanced telephony features. Call recording and other settings"
+        android:title="Advanced Call Settings">
+        <PreferenceCategory android:title="Advanced Call Settings">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="killprocess_show_dialpad_locator"
+                android:summary="Show dialpad as default on phone menu"
+                android:summaryOff="Dialpad display disabled"
+                android:summaryOn="Dialpad display enabled"
+                android:title="Dialpad attribution" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="auto_call_record_in"
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Incoming auto call record" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="auto_call_record_out"
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Outgoing auto call record" />
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="10000"
+                android:entries="@array/CallDelayName"
+                android:entryValues="@array/CallDelayValue"
+                android:key="killprocess_call_delay"
+                android:summary="Call screen return delay (in seconds)"
+                android:title="Call screen return time duration" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Caller LED flashlight setting">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="aurora_incoming_call_normal_flashlight"
+                android:summary="Ringing mode calls flashlight"
+                android:title="Ringing mode calls flashlight" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="aurora_incoming_call_silent_flashlight"
+                android:summary="Silent mode calls flashlight"
+                android:title="Silent mode calls flashlight" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="aurora_incoming_call_vibrate_flashlight"
+                android:summary="Vibration mode calls flashlight"
+                android:title="Vibration mode flashlight" />
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="1000"
+                android:entries="@array/incoming_call_flashlight_freqentries"
+                android:entryValues="@array/incoming_call_flashlight_freqvalues"
+                android:key="aurora_incoming_call_flashlight_freq"
+                android:summary=""
+                android:title="Caller flash frequency settings" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Usb Setup. Hardware Test, IMEI"
+        android:title="Advanced Function Menu">
+        <PreferenceCategory android:title="Advanced Function Menu">
+            <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+                android:summary="Testing menu and device information"
+                android:title="Phone Testing Menu"
+                phronesis:componentName="com.android.settings/com.android.settings.TestingSettings" />
+            <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+                android:summary="Allows changing advanced Usb mode settings"
+                android:title="Phone USB Mode setting"
+                phronesis:componentName="com.sec.usbsettings/com.sec.usbsettings.USBSettings" />
+            <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+                android:summary="Modify phone access points"
+                android:title="Phone APN Set up"
+                phronesis:componentName="com.android.settings/com.android.settings.Settings$ApnSettingsActivity" />
+            <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+                android:summary="All the battery information is here"
+                android:title="Battery Status"
+                phronesis:componentName="com.sec.android.app.factorykeystring/com.sec.android.app.status.BatteryStatus" />
+            <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+                android:summary="Here you can test all detected hardware"
+                android:title="Hardware test"
+                phronesis:componentName="com.sec.android.app.hwmoduletest/com.sec.android.app.hwmoduletest.HwModuleTest" />
+            <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+                android:summary="ViewIMEI/MEID"
+                android:title="IMEI/MEID"
+                phronesis:componentName="com.sec.android.app.servicemodeapp/com.sec.android.app.modemui.activities.ShowIMEI" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceCategory android:title="Device PIN Quick Unlock Service">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="killprocess_quick_unlock"
+            android:summary=""
+            android:summaryOff="Disabled. ATTN: For Device PIN and Password ONLY"
+            android:summaryOn="Enabled. ATTN: DO NOT USE WITH SIM PIN"
+            android:title="Quick Unlock PIN" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Screen Wake With USB Plugged">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="phronesis_usb_plugged"
+            android:summaryOff="Screen Off Enabled"
+            android:summaryOn="Screen On Enabled"
+            android:title="USB Plug / Unplug Wake Screen" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="Scrolling animations"
+        android:title="Mokee Listview Animations">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:dependency="listview_animation"
+            android:defaultValue="0"
+            android:entries="@array/listview_animation_entries"
+            android:entryValues="@array/listview_animation_values"
+            android:key="listview_animation"
+            android:title="Listview animation" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:dependency="listview_interpolator"
+            android:defaultValue="0"
+            android:entries="@array/listview_interpolator_entries"
+            android:entryValues="@array/listview_interpolator_values"
+            android:key="listview_interpolator"
+            android:title="Listview interpolator" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Touchwiz Page Effect">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:defaultValue="1"
+            android:entries="@array/tw_effect_entries"
+            android:entryValues="@array/tw_effect_values"
+            android:key="tw_page_effect"
+            android:title="Touchwiz Page Effect"
+            phronesis:packageNameToKill="com.sec.android.app.launcher"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Settings Columns">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:defaultValue="1"
+            android:entries="@array/dashboard_num_columns_entries"
+            android:entryValues="@array/dashboard_num_columns_values"
+            android:key="phronesis_no_columns"
+            android:title="No of Columns in Settings" />
+    </PreferenceCategory>
+</PreferenceScreen>

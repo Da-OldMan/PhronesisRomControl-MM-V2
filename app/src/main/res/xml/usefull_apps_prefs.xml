@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phronesis="http://schemas.android.com/apk/res-auto">
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Open device settings"
+        android:title="Open Settings"
+        phronesis:componentName="com.android.settings/com.android.settings.Settings" />     <!--android:icon="@drawable/ic_launcher_settings"-->
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Control Root access"
+        android:title="SuperSu"
+        phronesis:componentName="eu.chainfire.supersu/eu.chainfire.supersu.MainActivity-Material" />
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Launch and add apps to toolbox"
+        android:title="Toolbox Control"
+        phronesis:componentName="com.wubydax.toolboxsettings/com.wubydax.toolboxsettings/com.wubydax.toolboxsettings/com.wubydax.toolboxsettings.ToolboxSettings" />     <!--android:icon="@drawable/ic_setting_toolbox"-->
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Enable apps on UPSM and Emergency mode"
+        android:title="UPSM Manager"
+        phronesis:componentName="mobi.xperiacle.upsm.manager/mobi.xperiacle.upsm.manager.MainActivity" />     <!--android:icon="@drawable/ic_setting_upsm"-->
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Block Advertisements"
+        android:title="AdAway"
+        phronesis:componentName="org.adaway/org.adaway.ui.BaseActivity" />    <!--android:icon="@drawable/ic_launcher_adaway"-->
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Terminal Emulator for advanced users"
+        android:title="Terminal Emulator"
+        phronesis:componentName="jackpal.androidterm/jackpal.androidterm.Term" />
+    <!--android:icon="@drawable/ic_launcher_termemu"-->
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Interact with your device over wifi connection"
+        android:title="Root FTP Server"
+        phronesis:componentName="waterdev.rftp/waterdev.rftp.MainActivity" />
+    <!--android:icon="@drawable/rootftp"-->
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Show, Backup and Restore"
+        android:title="WIFI Password Management"
+        phronesis:componentName="com.vorsk.wifirecovery/com.vorsk.wifirecovery.HomeActivity" />
+    <!--android:icon="@drawable/wifibackuprestore"-->/>
+</PreferenceScreen>

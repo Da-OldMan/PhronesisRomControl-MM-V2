@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phronesis="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Google Apps Toggle">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Remove Google applications"
+            android:title="Disable Google Apps"
+            phronesis:scriptFileName="googleoff.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Install Google applications"
+            android:title="Enable Google Apps"
+            phronesis:scriptFileName="googleon.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Netflix Control">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Enable Netflix - device will auto-reboot"
+            android:title="Netflix ON"
+            phronesis:scriptFileName="enbnetlib.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Disable Netflix - device will auto-reboot"
+            android:title="Netflix OFF"
+            phronesis:scriptFileName="disnetlib.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Change Device DPI (Applications might not scale correctly outside 420 and 480 DPIs). Auto Hot Reboot">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="300 DPI"
+            phronesis:scriptFileName="dpi300.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="360 DPI"
+            phronesis:scriptFileName="dpi360.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="390 DPI"
+            phronesis:scriptFileName="dpi390.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="420 DPI"
+            phronesis:scriptFileName="dpi420.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="450 DPI"
+            phronesis:scriptFileName="dpi450.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="480 DPI"
+            phronesis:scriptFileName="dpi480.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Restore Stock Colors (Takes up to a minute) ">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Up to 60s to restore"
+            android:title="Global Stock Color Restore"
+            phronesis:scriptFileName="globalcolorrestore.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Up to 20s to restore"
+            android:title="Stock Statusbar Colors"
+            phronesis:scriptFileName="statusbarcolorrestore.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Up to 60s to restore"
+            android:title="Stock Notification Colors"
+            phronesis:scriptFileName="notificationcolorrestore.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Up to 20s to restore"
+            android:title="Stock Lockscreen Colors"
+            phronesis:scriptFileName="lockscreencolorrestore.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Fix Viper4Android Profile Path">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="Fix Viper4Android Paths"
+            phronesis:scriptFileName="viperprofilefix.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary=""
+            android:title="Undo Fix for Viper4Android Paths"
+            phronesis:scriptFileName="viperprofilefixundo.sh" />
+    </PreferenceCategory>
+</PreferenceScreen>

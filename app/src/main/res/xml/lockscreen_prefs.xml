@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phronesis="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Lockscreen settings">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="lockscreen_rotate"
+            android:summaryOff="Off"
+            android:summaryOn="On"
+            android:title="Lockscreen Rotation"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Lockscreen Notifications">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:defaultValue="2"
+            android:entries="@array/lockscreen_notif_entries"
+            android:entryValues="@array/lockscreen_notif_values"
+            android:key="lockscreen_notifications"
+            android:summary="Number shown on lockscreen"
+            android:title="Notifications Shown on Lockscreen"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Lockscreen Mods">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="use_lockscreen_clock_font_style"
+            android:summaryOff="Disabled"
+            android:summaryOn="Custom font enabled"
+            android:title="Clock Custom Font Style" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:dependency="use_lockscreen_clock_font_style"
+            android:entries="@array/lockscreen_font_style_entries"
+            android:entryValues="@array/lockscreen_font_style_values"
+            android:key="lockscreen_clock_font_style"
+            android:title="Lockscreen Clock Font Style" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Restore Stock Lockscreen Panel Colors">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:icon="@drawable/restorecolour"
+            android:summary="Up to 20s to restore"
+            android:title="Restore Stock Lockscreen Colors"
+            phronesis:scriptFileName="lockscreencolorrestore.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Individual Clock Colors">
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:defaultValue="-1"
+            android:key="kg_clock_hours_color"
+            android:summary="Choose a color"
+            android:title="Text Color hours" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:defaultValue="-1"
+            android:key="kg_clock_minutes_color"
+            android:summary="Choose a color"
+            android:title="Text Color minutes" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:defaultValue="-1"
+            android:key="kg_clock_second_color"
+            android:summary="Choose a color"
+            android:title="Text Color seconds Hours" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:defaultValue="-1"
+            android:key="kg_date_color"
+            android:summary="Choose a color"
+            android:title="Date Text Color" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="0"
+            android:key="lock_seconds"
+            android:summaryOff="Hide"
+            android:summaryOn="Show"
+            android:title="Show seconds in hours" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Next Alarm Toggles">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="next_alarm"
+            android:summaryOff="Show"
+            android:summaryOn="Hide"
+            android:title="Next Alarm" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:defaultValue="-1"
+            android:key="next_alarm_color"
+            android:summary="Choose next alarm color"
+            android:title="Next Alarm Text Color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="Customize what displays on lockscreen"
+        android:title="Carrier Text Mods">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="custom_lock_carrier"
+            android:summaryOff="Disabled"
+            android:summaryOn="Enabled"
+            android:title="Use Custom Carrier Text"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
+        <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference
+            android:defaultValue=""
+            android:dependency="custom_lock_carrier"
+            android:dialogTitle="Set Custom Text"
+            android:key="custom_lock_carrier_text"
+            android:summary="Edit carrier label"
+            android:title="Carrier Custom Text" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:defaultValue="-1"
+            android:key="carrier_color"
+            android:summary="Choose carrier color"
+            android:title="Carrier Text"
+            phronesis:rebootDevice="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

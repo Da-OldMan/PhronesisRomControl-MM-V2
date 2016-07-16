@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="soundpanel_logo">@drawable/logo_dark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark" parent="AppThemeDark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:colorBackground">@color/darkBgColor</item>
+        <item name="soundpanel_logo">@drawable/logo_light</item>
+    </style>
+
+    <style name="NestedPrefScreenToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="RebootDialogTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/MyDialogWindowAnimation</item>
+
+    </style>
+
+    <style name="MyDialogWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+
+</resources>
