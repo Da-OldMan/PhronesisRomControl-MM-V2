@@ -26,8 +26,3 @@ chmod 644 /system/lib/libMyScriptText.so
 chmod 644 /system/lib/libStylusCore.so
 chmod 644 /system/lib/libswiftkeysdk-java.so
 chmod 644 /system/app/SamsungIMEv2_5/SamsungIMEv2_5.apk
-
-sleep 1
-
-pkill zygote
-

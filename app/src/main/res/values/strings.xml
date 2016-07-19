@@ -33,12 +33,12 @@
     <string name="backup_file_suffix" translatable="false">_RCBackup</string>
     <string name="restore_complete_toast">Restore complete</string>
     <string name="systemui_prefs">SystemUI prefs</string>
-    <string name="phone_prefs">Phone prefs</string>
+    <string name="phone_prefs">System Advanced Settings</string>
     <string name="framework_prefs">Framework prefs</string>
-    <string name="notification_panel_prefs">Notification panel prefs</string>
+    <string name="notification_panel_prefs">Notification Panel</string>
     <string name="statusbar_prefs">Statusbar Mods</string>
     <string name="more_options">More options</string>
-    <string name="set_theme">Set theme</string>
+    <string name="set_theme">Set Theme</string>
     <string name="backup_and_restore"><![CDATA[Backup & Restore]]></string>
     <string name="changelog">Changelog</string>
     <string name="about_us">About us</string>
@@ -81,7 +81,7 @@
     <string name="listview_unfold">Unfold</string>
     <string name="listview_wave_left">Wave (left)</string>
     <string name="listview_wave_right">Wave (right)</string>
-    <string name="lockscreen_prefs">Lockscreen Prefs</string>
+    <string name="lockscreen_prefs">Lockscreen Mods</string>
     <string name="backup_device_prefs">Backup Device Databases</string>
     <string name="buttons_swipe_prefs">Soft + Virtual Key Settings</string>
     <string name="adv_device_mods_prefs">Advanced Device Mods</string>

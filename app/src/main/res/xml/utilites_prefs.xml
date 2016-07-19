@@ -5,64 +5,83 @@
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Remove Google applications"
             android:title="Disable Google Apps"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="googleoff.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Install Google applications"
             android:title="Enable Google Apps"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="googleon.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Netflix Control">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Enable Netflix - device will auto-reboot"
             android:title="Netflix ON"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="enbnetlib.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Disable Netflix - device will auto-reboot"
             android:title="Netflix OFF"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="disnetlib.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Change Device DPI (Applications might not scale correctly outside 420 and 480 DPIs). Auto Hot Reboot">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="300 DPI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="dpi300.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="360 DPI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="dpi360.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="390 DPI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="dpi390.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="420 DPI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="dpi420.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="450 DPI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="dpi450.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="480 DPI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="dpi480.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Restore Stock Colors (Takes up to a minute) ">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Up to 60s to restore"
             android:title="Global Stock Color Restore"
+            phronesis:packageNameToKill="com.android.systemui"
             phronesis:scriptFileName="globalcolorrestore.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Up to 20s to restore"
             android:title="Stock Statusbar Colors"
+            phronesis:packageNameToKill="com.android.systemui"
             phronesis:scriptFileName="statusbarcolorrestore.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Up to 60s to restore"
             android:title="Stock Notification Colors"
+            phronesis:packageNameToKill="com.android.systemui"
             phronesis:scriptFileName="notificationcolorrestore.sh" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+            android:summary="Up to 60s to restore"
+            android:title="LockScreen Weather Colors"
+            phronesis:packageNameToKill="com.android.systemui"
+            phronesis:scriptFileName="lockweathercolorrestore.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Up to 20s to restore"
             android:title="Stock Lockscreen Colors"
+            phronesis:packageNameToKill="com.android.systemui"
             phronesis:scriptFileName="lockscreencolorrestore.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Fix Viper4Android Profile Path">

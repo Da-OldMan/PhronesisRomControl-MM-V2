@@ -173,7 +173,7 @@ public class MyDialogFragment extends DialogFragment implements View.OnClickList
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(new MyAdapter(getActivity()));
         return new AlertDialog.Builder(getActivity())
-                .setTitle(String.format(Locale.getDefault(), getString(R.string.changelog_version_title), "build v1.0 6thgearrom".toUpperCase()))
+                .setTitle(String.format(Locale.getDefault(), getString(R.string.changelog_version_title), "Phronesis MM N5 v1.3".toUpperCase()))
                 .setView(recyclerView)
                 .setPositiveButton(android.R.string.ok, null)
                 .create();

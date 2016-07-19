@@ -21,22 +21,19 @@
         <item>@drawable/icon_5</item>
     </array>
     <string-array name="changelog_items">
-        <item>Phronesis V1.0 for MM release</item>
-        <item> </item>
-        <item>Whole new rom control app</item>
-        <item>All options re-written and optimised</item>
-        <item>And another changelog thing ;lsj; lkjs ;lkj ; lkj;lsjk ;sklj s;lkj s;lk js;lkj s;lkj</item>
-        <item>How many changelog things</item>
-        <item>What a long changelog!!!</item>
-        <item>Is it twenty already?</item>
-        <item>Are we there yet?</item>
-        <item>Live long and prosper</item>
-        <item>So say we all</item>
-        <item>Patience you must have</item>
-        <item>Great scot!!!</item>
-        <item>No disassemble…</item>
-        <item>Almost there</item>
-        <item>Done with changelog</item>
+        <item>Fix SystemUI Power saving mode showing grey statusbar</item>
+        <item>Fix Slow motion camera in stock camera</item>
+        <item>Fix "Close" message in stock SystemUI</item>
+        <item>Rework the Battery bar for auto color. Color changes depending on the battery level</item>
+        <item>Fixed overlapping on the lockscreen at 480dpi</item>
+        <item>Improve location detection</item>
+        <item>Improve WIFI connection rate</item>
+        <item>GPS connection rate improved</item>
+        <item>Rom Control V2 integrated. More attractive and better performance</item>
+        <item>ios implemented</item>
+        <item>Humidity on lockscree. Next release might actually see a toggle for all lockscreen weather items</item>
+        <item>Potato clock removed from lockscreen</item>
+        <item>Added option to revoke all granted permissions on device</item>
     </string-array>
     <array name="about_contact_us_drawables">
         <item>@drawable/icon_2</item>
@@ -49,14 +46,15 @@
         <item>XDA</item>
     </string-array>
     <string-array name="about_contact_us_links">
-        <item>https://www.facebook.com/</item>
-        <item>https://www.google.com/</item>
+        <item>https://www.google.co.uk/</item>
+        <item>http://forum.xda-developers.com/galaxy-note-3/development/rom-phronesis-mm-rom-v1-feature-rich-t3400809</item>
         <item>http://forum.xda-developers.com/galaxy-note-3/development/rom-phronesis-mm-rom-v1-feature-rich-t3400809</item>
     </string-array>
     <array name="about_team_drawables">
         <item>@drawable/icon_5</item>
         <item>@drawable/icon_6</item>
         <item>@drawable/icon_1</item>
+		<item>@drawable/icon_3</item>
     </array>
     <string-array name="about_team_names">
         <item>Oluwaponmile - The main rom developer</item>
@@ -65,33 +63,22 @@
         <item>Logel - Beta tester and Xda support</item>
     </string-array>
     <string-array name="about_team_links">
-        <item>https://www.facebook.com/</item>
-        <item>https://www.google.com/</item>
-        <item>http://forum.xda-developers.com/</item>
+        <item>http://forum.xda-developers.com/member.php?u=744557</item>
+        <item>http://forum.xda-developers.com/member.php?u=3026895</item>
+        <item>http://forum.xda-developers.com/member.php?u=3002844</item>
+		<item>http://forum.xda-developers.com/member.php?u=3901205</item>
     </string-array>
     <array name="about_credits_drawables">
         <item>@drawable/icon_1</item>
         <item>@drawable/icon_3</item>
-        <item>@drawable/icon_4</item>
-        <item>@drawable/icon_2</item>
-        <item>@drawable/icon_6</item>
-        <item>@drawable/icon_5</item>
     </array>
     <string-array name="about_credits_names">
-        <item>Star Trek - for being ultimately better than Star Wars</item>
-        <item>Jean-Luc Picard - for making us crave hot earl-grey tea even in the middle of the summer</item>
-        <item>Data - for running on the best rom. Google, we still are waiting for THAT android version</item>
-        <item>Janeway - for being a normal person and drinking black coffee</item>
-        <item>Q - for reminding us that you can live forever and still look great</item>
-        <item>Worf - for teaching us to love Klingons. It was NOT easy</item>
+        <item>Daxgirl - For her tremendious effort on rom control project</item>
+        <item>Wuby -  Thanks for your effort on this rom control project</item>
     </string-array>
     <string-array name="about_credits_links">
-        <item>https://www.facebook.com/</item>
-        <item>https://www.google.com/</item>
-        <item>http://forum.xda-developers.com/</item>
-        <item>https://www.facebook.com/</item>
-        <item>https://www.google.com/</item>
-        <item>http://forum.xda-developers.com/</item>
+        <item>http://forum.xda-developers.com/member.php?u=4714483</item>
+        <item>http://forum.xda-developers.com/member.php?u=5493353</item>
     </string-array>
     <string-array name="custom_bg_type_entries">
         <item>Image</item>
@@ -768,5 +755,29 @@
         <item>400</item>
         <item>450</item>
         <item>500</item>
+    </string-array>
+	<string-array name="battery_bar_height_enties">
+        <item>1.0 Dip</item>
+        <item>2.0 Dip</item>
+        <item>3.0 Dip</item>
+        <item>4.0 Dip</item>
+        <item>5.0 Dip</item>
+        <item>6.0 Dip</item>
+        <item>7.0 Dip</item>
+        <item>8.0 Dip</item>
+        <item>9.0 Dip</item>
+        <item>10.0 Dip</item>
+    </string-array>
+    <string-array name="battery_bar_height_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
     </string-array>
 </resources>

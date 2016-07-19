@@ -24,7 +24,3 @@ settings put system notification_background_color -328966
 settings put system pulldown_text -14791048
 settings put system edit_color -14791048
 settings put system quickconnect_color -14791048
-
-sleep 3
-
-pkill com.android.systemui

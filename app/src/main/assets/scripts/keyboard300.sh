@@ -29,9 +29,3 @@ chmod 644 /system/lib/libStylusCore.so
 chmod 644 /system/lib/libswiftkeysdk-java.so
 chmod 644 /system/lib/libXt9core.so
 chmod 644 /system/app/SamsungIMEv3/SamsungIMEv3.apk
-
-
-sleep 1
-
-pkill zygote
-
