@@ -7,7 +7,9 @@
             android:key="statusbar_hide_bluetooth"
             android:summaryOff="Bluetooth Icon is hidden"
             android:summaryOn="Bluetooth Icon is visible"
-            android:title="Bluetooth Icon" />
+            android:title="Bluetooth Icon"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="true"
             android:key="statusbar_hide_alarm"
@@ -74,6 +76,7 @@
             android:icon="@drawable/restorecolour"
             android:summary="Up to 20s to restore"
             android:title="Restore Stock Statusbar Panel Colors"
+            phronesis:packageNameToKill="com.android.systemui"
             phronesis:scriptFileName="statusbarcolorrestore.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Individual Colors">
@@ -85,8 +88,8 @@
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="-1"
             android:key="statusbar_signal_color"
-            android:summary="Select color of signalbars"
-            android:title="Signalbar Icon Color" />
+            android:summary="Select color of signal bars"
+            android:title="Signal bar Icon Color" />
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="-1"
             android:key="statusbar_data_color"
@@ -102,38 +105,38 @@
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui"/>
     </PreferenceCategory>
-    <PreferenceCategory android:title="Statusbar Batterybar Mod Setting">
+    <PreferenceCategory android:title="Linear Batterybar Settings">
         <PreferenceScreen
             android:summary="Display Line on top for battery"
             android:title="Battery Bar">
-            <com.wubydax.romcontrol.v2.prefs.MyListPreference
-                android:defaultValue="0"
-                android:entries="@array/battery_bar_entries"
-                android:entryValues="@array/battery_bar_values"
-                android:key="battery_bar"
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="phr_battery_bar_style"
                 android:title="Battery Bar" />
             <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                 android:defaultValue="true"
-                android:key="battery_bar_animate"
+                android:key="battery_bar_anim_on"
                 android:summaryOff="Disabled"
                 android:summaryOn="Enabled"
                 android:title="Batterybar charging animation" />
             <com.wubydax.romcontrol.v2.prefs.MyListPreference
                 android:defaultValue="1"
-                android:entries="@array/battery_bar_style_entries"
-                android:entryValues="@array/battery_bar_style_values"
-                android:key="battery_bar_style"
-                android:title="Battery bar style" />
-            <com.wubydax.romcontrol.v2.prefs.MyListPreference
-                android:defaultValue="2"
-                android:entries="@array/battery_bar_thickness_entries"
-                android:entryValues="@array/battery_bar_thickness_values"
-                android:key="battery_bar_thickness"
-                android:title="Thickness of battery bar" />
+                android:entries="@array/battery_bar_height_enties"
+                android:entryValues="@array/battery_bar_height_values"
+                android:key="battery_bar_height"
+                android:title="Battery bar thickness" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="battery_bar_auto_color"
+                android:summaryOn="Default color set"
+                android:summaryOff="Use custom color"
+                android:summary="Set color of battery bar"
+                android:title="Battery Bar Color" />
             <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="-1"
+                android:defaultValue="@integer/COLOR_GREEN"
                 android:key="battery_bar_color"
-                android:summary="Choose color of battery bar"
+                android:summary="Customize batterybar color"
+                alphaSlider="true"
                 android:title="Battery Bar Color" />
         </PreferenceScreen>
     </PreferenceCategory>

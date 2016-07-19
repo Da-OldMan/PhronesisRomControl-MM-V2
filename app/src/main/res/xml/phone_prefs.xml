@@ -16,9 +16,9 @@
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="false"
             android:key="torchlight_enable"
-            android:summary="When the screen is locked Press the volume button to turn on or switch off the flashlight"
-            android:summaryOff="Lock screen flashlight disabled"
-            android:summaryOn="Lock screen flashlight enabled"
+            android:summary="ScreenOff touchlight volume key toggle"
+            android:summaryOff="Disabled"
+            android:summaryOn="Enabled"
             android:title="Lock screen flashlight" />
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:defaultValue="30000"

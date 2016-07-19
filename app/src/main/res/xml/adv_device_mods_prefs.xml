@@ -5,18 +5,22 @@
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Round corner notifications and recent tasks"
             android:title="Round SystemUI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="mmround.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Square corner notifications and recent tasks"
             android:title="Square SystemUI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="mmsquare.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Not suitable for Samsung Themes"
             android:title="SystemUI with Notification Panel color mods"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="notificolormods.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Not a single mod"
             android:title="Pure Stock SystemUI"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="pstock.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="---------------------------------------------------------------" />
@@ -24,10 +28,12 @@
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="Round corner frame panel"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="moddedframe.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="Stock frames"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="stockframe.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="---------------------------------------------------------------" />
@@ -35,10 +41,12 @@
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="Samsung Keyboard v2.5"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="keyboard250.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="No Hand Writing"
             android:title="Samsung Keyboard v3"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="keyboard300.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="---------------------------------------------------------------" />
@@ -46,10 +54,12 @@
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="LongPress Customisable"
             android:title="Map to Recent Task"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="keymaprecent.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="LongPress bound to SFinder"
             android:title="Map to Menu"
+            phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="keymapmenu.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="---------------------------------------------------------------" />
@@ -64,9 +74,11 @@
     <PreferenceCategory android:title="Volume slider Sound">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:title="Disable Volume Slider Sound"
+            phronesis:packageNameToKill="com.android.systemui"/>
             phronesis:scriptFileName="disvolsnds.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:title="Enable Volume Slider Sound"
+            phronesis:packageNameToKill="com.android.systemui"/>
             phronesis:scriptFileName="envolsnds.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Battery Sound">

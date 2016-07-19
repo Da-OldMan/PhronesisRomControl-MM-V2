@@ -41,7 +41,9 @@
             android:icon="@drawable/restorecolour"
             android:summary="Up to 20s to restore"
             android:title="Restore Stock Lockscreen Colors"
-            phronesis:scriptFileName="lockscreencolorrestore.sh" />
+            phronesis:scriptFileName="lockscreencolorrestore.sh"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="Individual Clock Colors">
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
@@ -71,6 +73,66 @@
             android:summaryOn="Show"
             android:title="Show seconds in hours" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="Colorized Weather">
+        <PreferenceScreen
+            android:summary="Colorise Lockscreen Weather Items"
+            android:title="Weather Items Color">
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#ffffffff"
+                android:key="color_temp"
+                android:summary=""
+                phronesis:isSilent="false"
+                android:title="Text-degree Color"
+                phronesis:packageNameToKill="com.android.systemui"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#ffffffff"
+                android:key="color_high_temp"
+                android:summary=""
+                phronesis:isSilent="false"
+                android:title="Text Color Max Temperature"
+                phronesis:packageNameToKill="com.android.systemui"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#ffffffff"
+                android:key="color_low_temp"
+                android:summary=""
+                phronesis:isSilent="false"
+                android:title="Text Color Min Temperature"
+                phronesis:packageNameToKill="com.android.systemui"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#ffffffff"
+                android:key="color_sunrise"
+                android:summary=""
+                phronesis:isSilent="false"
+                android:title="Color Text Rise"
+                phronesis:packageNameToKill="com.android.systemui"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#ffffffff"
+                android:key="color_location"
+                android:summary=""
+                phronesis:isSilent="false"
+                android:title="Colorized Text Location"
+                phronesis:packageNameToKill="com.android.systemui"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#ffffffff"
+                android:key="color_sunset"
+                android:summary=""
+                phronesis:isSilent="false"
+                android:title="Colorized Text Sunset"
+                phronesis:packageNameToKill="com.android.systemui"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#ffffffff"
+                android:key="color_text"
+                android:summary=""
+                phronesis:isSilent="false"
+                android:title="Colorized Weather Text"
+                phronesis:packageNameToKill="com.android.systemui"/>
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:summary="Up to 60s to restore"
+                android:title="Restore Stock Lockscreen Weather Colors"
+                phronesis:scriptFileName="lockweathercolorrestore.sh"
+                phronesis:packageNameToKill="com.android.systemui"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
     <PreferenceCategory android:title="Next Alarm Toggles">
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="false"
@@ -82,7 +144,7 @@
             android:defaultValue="-1"
             android:key="next_alarm_color"
             android:summary="Choose next alarm color"
-            android:title="Next Alarm Text Color"
+            android:title="Next Alarm Color"
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui"/>
     </PreferenceCategory>

@@ -3,8 +3,4 @@ export PATH=/system/bin:$PATH
 
 mount -o rw,remount /system
 
-wm density 300 
-
-sleep 3
-
-pkill zygote
+wm density 300

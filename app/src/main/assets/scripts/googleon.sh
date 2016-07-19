@@ -18,8 +18,3 @@ mv /system/app/Gmail2/Gmail2.apk.bak /system/app/Gmail2/Gmail2.apk
 mv /system/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk.bak /system/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk
 mv /system/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk.bak /system/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk
 mv /system/app/GoogleTTS/GoogleTTS.apk.bak /system/app/GoogleTTS/GoogleTTS.apk
-
-sleep 2
-
-reboot
-

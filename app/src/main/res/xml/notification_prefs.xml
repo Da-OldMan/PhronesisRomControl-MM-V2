@@ -82,7 +82,7 @@
             android:title="QuickLaunch Cutomization">
             <PreferenceScreen
                 android:summary=""
-                android:title="QuickLauncher Settings On Pull Down">
+                android:title="QuickLauncher On Pull Down">
                 <PreferenceCategory android:title="On Nofication Panel" />
                 <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                     android:defaultValue="false"
@@ -97,83 +97,63 @@
                     android:key="quick_launch_show_devider"
                     android:summaryOff="Hidden"
                     android:summaryOn="Shown"
-                    android:title="QuickLauncher Divider"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="QuickLauncher Divider"/>
                 <com.wubydax.romcontrol.v2.prefs.MyListPreference
                     android:defaultValue="5"
                     android:entries="@array/StatusAppListColumnName"
                     android:entryValues="@array/StatusAppListColumnValue"
                     android:key="quick_launch_vis_buttons"
-                    android:title="Number of Quickbuttons shown"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="Number of Quickbuttons shown"/>
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="\#00000000"
                     android:key="quick_launch_background_color"
                     android:summary="Choose color"
-                    android:title="QuickLaunch background color"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="QuickLaunch background color"/>
             </PreferenceScreen>
             <PreferenceScreen
                 android:summary=""
-                android:title="QuickLauncher Settings in Recent Task Panel">
+                android:title="QuickLauncher in Recent Task Panel">
                 <PreferenceCategory android:title="QuickLaunch in Recent" />
                 <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                     android:defaultValue="false"
                     android:key="quick_launch_visible2"
                     android:summaryOff="Hidden"
                     android:summaryOn="Shown"
-                    android:title="QuickLauncher Visibility"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="QuickLauncher Visibility"/>
                 <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                     android:defaultValue="true"
                     android:key="quick_launch_show_add2"
                     android:summaryOff="Hidden"
                     android:summaryOn="Shown"
-                    android:title="QuickLauncher Add App Button"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="QuickLauncher Add App Button"/>
                 <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                     android:defaultValue="false"
                     android:key="quick_launch_show_devider2"
                     android:summaryOff="Hidden"
                     android:summaryOn="Shown"
-                    android:title="QuickLauncher Divider"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="QuickLauncher Divider"/>
                 <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                     android:defaultValue="false"
                     android:key="quick_launch_text_visible2"
                     android:summaryOff="Hidden"
                     android:summaryOn="Shown"
-                    android:title="QuickLauncher Text"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="QuickLauncher Text"/>
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="\#ff325d84"
                     android:key="quick_launch_text_color2"
                     android:summary="Choose color"
-                    android:title="QuickLaunch text Color"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="QuickLaunch text Color"/>
                 <com.wubydax.romcontrol.v2.prefs.MyListPreference
                     android:defaultValue="5"
                     android:entries="@array/StatusAppListColumnName"
                     android:entryValues="@array/StatusAppListColumnValue"
                     android:key="quick_launch_vis_buttons2"
-                    android:title="Number of Quickbuttons shown"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="Number of Quickbuttons shown"/>
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="\#00000000"
                     android:key="quick_launch_background_color2"
                     android:summary="Choose color"
-                    android:title="QuickLaunch background color"
-                    phronesis:isSilent="false"
-                    phronesis:packageNameToKill="com.android.systemui"/>
+                    android:title="QuickLaunch background color"/>
             </PreferenceScreen>
         </PreferenceScreen>
     </PreferenceCategory>
@@ -182,7 +162,8 @@
             android:icon="@drawable/restorecolour"
             android:summary="Up to 60s to restore"
             android:title="Restore Stock Notification Panel Colors"
-            phronesis:scriptFileName="notificationcolorrestore.sh" />
+            phronesis:scriptFileName="notificationcolorrestore.sh"
+            phronesis:packageNameToKill="com.android.systemui"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="Notification Panel Colors">
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
@@ -262,7 +243,9 @@
             android:entryValues="@array/toggle_values"
             android:key="QSPanel_NumberCount"
             android:summary="Number of toggles shown"
-            android:title="Visible Toggles Shown" />
+            android:title="Visible Toggles Shown"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:defaultValue="10"
             android:entries="@array/toggle_scroll_entries"
@@ -290,29 +273,39 @@
             android:defaultValue="#fff5f7f8"
             android:key="toggle_buttons_background_color"
             android:summary="Choose the color of stock quick toggles circle background"
-            android:title="Toggle Circle Color" />
+            android:title="Toggle Circle Color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="#ff3a90dc"
             android:key="toggle_icon_on_color"
             android:summary="Set toggle On color"
-            android:title="Quick Toggle On Color" />
+            android:title="Quick Toggle On Color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="#ffb4c4d1"
             android:key="toggle_icon_off_color"
             android:summary="Set toggle Off color"
-            android:title="Quick Toggle Off Color" />
+            android:title="Quick Toggle Off Color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="#ff426b8e"
             android:key="toggle_text_color"
             android:summary="Set text color"
-            android:title="Quick Toggle Text Color" />
+            android:title="Quick Toggle Text Color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="Brightness Panel Colors">
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="#ffe9eaec"
             android:dependency="link_colors"
             android:key="brightness_background_color"
-            android:title="Brightness background color" />
+            android:title="Brightness background color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="Data Usage Panel Colors">
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
@@ -326,7 +319,9 @@
             android:dependency="link_colors"
             android:key="data_usage_color"
             android:summary="Set text color"
-            android:title="Data usage text color" />
+            android:title="Data usage text color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="Quick Connect Panel Bg. Colors">
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
@@ -382,12 +377,14 @@
             android:summary="%s"
             android:title="Choose Visualizer Style" />
     </PreferenceCategory>
-    <!--<PreferenceCategory android:title="Round or Sharp Corners">-->
-        <!--<com.wubydax.romcontrol.v2.prefs.MySwitchPreference-->
-            <!--android:defaultValue="1"-->
-            <!--android:key="phronesis_corner_shape"-->
-            <!--android:summaryOff="Sharp"-->
-            <!--android:summaryOn="Round"-->
-            <!--android:title="Round or Sharp ?" />-->
-    <!--</PreferenceCategory>-->
+    <PreferenceCategory android:title="Round or Square Corners">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="1"
+            android:key="phronesis_corner_shape"
+            android:summaryOff="Round"
+            android:summaryOn="Square"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui"
+            android:title="Select Round or Square SystemUI" />
+    </PreferenceCategory>
 </PreferenceScreen>
