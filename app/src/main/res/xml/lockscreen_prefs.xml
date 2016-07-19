@@ -42,7 +42,6 @@
             android:summary="Up to 20s to restore"
             android:title="Restore Stock Lockscreen Colors"
             phronesis:scriptFileName="lockscreencolorrestore.sh"
-            phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="Individual Clock Colors">
