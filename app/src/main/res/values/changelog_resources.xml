@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_items">
+        <item>Fix SystemUI Power saving mode showing grey statusbar</item>
+        <item>Fix Slow motion camera in stock camera</item>
+        <item>Fix "Close" message in stock SystemUI</item>
+        <item>Rework the Battery bar for auto color. Color changes depending on the battery level</item>
+        <item>Fixed overlapping on the lockscreen at 480dpi</item>
+        <item>Improve location detection</item>
+        <item>Improve WIFI connection rate</item>
+        <item>GPS connection rate improved</item>
+        <item>Rom Control V2 integrated. More attractive and better performance</item>
+        <item>ios implemented</item>
+        <item>Humidity on lockscree. Next release might actually see a toggle for all lockscreen weather items</item>
+        <item>Potato clock removed from lockscreen</item>
+        <item>Added option to revoke all granted permissions on device</item>
+    </string-array>
+
+    <string name="rom_version_for_changelog">Phronesis MM N5 v1.3</string>
+</resources>
