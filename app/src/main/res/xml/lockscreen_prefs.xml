@@ -28,6 +28,7 @@
             android:key="use_lockscreen_clock_font_style"
             android:summaryOff="Disabled"
             android:summaryOn="Custom font enabled"
+            phronesis:packageNameToKill="com.android.systemui"
             android:title="Clock Custom Font Style" />
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:dependency="use_lockscreen_clock_font_style"
