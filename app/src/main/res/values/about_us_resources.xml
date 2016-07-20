@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="about_contact_us_drawables">
+        <item>@drawable/icon_2</item>
+        <item>@drawable/icon_1</item>
+        <item>@drawable/icon_3</item>
+    </array>
+    <string-array name="about_contact_us_text">
+        <item>Facebook</item>
+        <item>Our Site</item>
+        <item>XDA</item>
+    </string-array>
+    <string-array name="about_contact_us_links">
+        <item>https://www.google.co.uk/</item>
+        <item>http://forum.xda-developers.com/galaxy-note-3/development/rom-phronesis-mm-rom-v1-feature-rich-t3400809</item>
+        <item>http://forum.xda-developers.com/galaxy-note-3/development/rom-phronesis-mm-rom-v1-feature-rich-t3400809</item>
+    </string-array>
+    <array name="about_team_drawables">
+        <item>@drawable/icon_5</item>
+        <item>@drawable/icon_6</item>
+        <item>@drawable/icon_1</item>
+        <item>@drawable/icon_3</item>
+    </array>
+    <string-array name="about_team_names">
+        <item>Oluwaponmile - The main rom developer</item>
+        <item>DaOldMan - Rom Control programmer, Modder and Xda Support</item>
+        <item>Filchi - Themer and Modder</item>
+        <item>Logel - Beta tester and Xda support</item>
+    </string-array>
+    <string-array name="about_team_links">
+        <item>http://forum.xda-developers.com/member.php?u=744557</item>
+        <item>http://forum.xda-developers.com/member.php?u=3026895</item>
+        <item>http://forum.xda-developers.com/member.php?u=3002844</item>
+        <item>http://forum.xda-developers.com/member.php?u=3901205</item>
+    </string-array>
+    <array name="about_credits_drawables">
+        <item>@drawable/icon_1</item>
+        <item>@drawable/icon_3</item>
+    </array>
+    <string-array name="about_credits_names">
+        <item>Daxgirl - For her tremendious effort on rom control project</item>
+        <item>Wuby -  Thanks for your effort on this rom control project</item>
+    </string-array>
+    <string-array name="about_credits_links">
+        <item>http://forum.xda-developers.com/member.php?u=4714483</item>
+        <item>http://forum.xda-developers.com/member.php?u=5493353</item>
+    </string-array>
+</resources>

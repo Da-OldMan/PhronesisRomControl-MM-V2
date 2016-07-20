@@ -378,13 +378,90 @@
             android:title="Choose Visualizer Style" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Round or Square Corners">
-        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:defaultValue="1"
             android:key="phronesis_corner_shape"
-            android:summaryOff="Round"
-            android:summaryOn="Square"
+            android:entries="@array/systemui_type_entries"
+            android:entryValues="@array/systemui_type_values"
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui"
             android:title="Select Round or Square SystemUI" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Device info on notification settings">
+        <PreferenceScreen
+            android:title="Device info customization">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="device_info_visibility"
+                android:summaryOff="Disabled"
+                android:summaryOn="Enabled"
+                android:title="Enable device info view"/>
+            <PreferenceCategory
+                android:title="Text colors"
+                android:dependency="device_info_visibility">
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="gear_info_names_color"
+                    android:title="Info names text color"/>
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="gear_info_values_color"
+                    android:title="Info values text color"/>
+            </PreferenceCategory>
+            <PreferenceCategory
+                android:title="Device Info Items"
+                android:dependency="device_info_visibility">
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_model"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Device model"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_android_version"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Android version"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_build_version"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Build version"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_battery_level"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Battery level"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_network_name"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Network name"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_wifi_info"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="WIFI info"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_next_alarm"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Next alarm"/>
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="device_up_time"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Device up time"/>
+
+            </PreferenceCategory>
+        </PreferenceScreen>
     </PreferenceCategory>
 </PreferenceScreen>
