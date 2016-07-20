@@ -385,7 +385,7 @@
             android:entryValues="@array/systemui_type_values"
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui"
-            android:title="Select Round or Square SystemUI" />
+            android:title="SystemUI background corners shape" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="Device info on notification settings">

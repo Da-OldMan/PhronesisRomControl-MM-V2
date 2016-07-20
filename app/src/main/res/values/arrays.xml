@@ -721,8 +721,8 @@
         <item>10</item>
     </string-array>
     <string-array name="systemui_type_entries">
-        <item>Square SystemUI</item>
-        <item>Round SystemUI</item>
+        <item>Rounded</item>
+        <item>Stock</item>
     </string-array>
     <string-array name="systemui_type_values">
         <item>0</item>
