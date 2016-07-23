@@ -40,6 +40,8 @@
         android:supportsRtl="false"
         android:theme="@style/AppThemeDark"
         tools:ignore="GoogleAppIndexingWarning">
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="true"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -47,6 +49,7 @@
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
             </intent-filter>
         </activity>
         <activity

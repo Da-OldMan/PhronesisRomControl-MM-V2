@@ -696,7 +696,7 @@
         <item>450</item>
         <item>500</item>
     </string-array>
-	<string-array name="battery_bar_height_enties">
+    <string-array name="battery_bar_height_enties">
         <item>1.0 Dip</item>
         <item>2.0 Dip</item>
         <item>3.0 Dip</item>
@@ -727,5 +727,35 @@
     <string-array name="systemui_type_values">
         <item>0</item>
         <item>1</item>
+    </string-array>
+    <string-array name="carrier_entries">
+        <item>Actual carrier text</item>
+        <item>Custom text</item>
+    </string-array>
+    <string-array name="carrier_entry_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="data_usage_gravity_entries">
+        <item>To end</item>
+        <item>Center horizontal</item>
+        <item>To start</item>
+    </string-array>
+    <string-array name="data_usage_gravity_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_usage_text_style_entries">
+        <item>Normal</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
+    </string-array>
+    <string-array name="data_usage_text_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
 </resources>

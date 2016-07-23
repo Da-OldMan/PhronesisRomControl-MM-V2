@@ -9,7 +9,7 @@
             android:summaryOn="On"
             android:title="Lockscreen Rotation"
             phronesis:isSilent="false"
-            phronesis:packageNameToKill="com.android.systemui"/>
+            phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Lockscreen Notifications">
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
@@ -20,117 +20,147 @@
             android:summary="Number shown on lockscreen"
             android:title="Notifications Shown on Lockscreen"
             phronesis:isSilent="false"
-            phronesis:packageNameToKill="com.android.systemui"/>
+            phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Lockscreen Mods">
-        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-            android:defaultValue="false"
-            android:key="use_lockscreen_clock_font_style"
-            android:summaryOff="Disabled"
-            android:summaryOn="Custom font enabled"
-            phronesis:packageNameToKill="com.android.systemui"
-            android:title="Clock Custom Font Style" />
-        <com.wubydax.romcontrol.v2.prefs.MyListPreference
-            android:dependency="use_lockscreen_clock_font_style"
-            android:entries="@array/lockscreen_font_style_entries"
-            android:entryValues="@array/lockscreen_font_style_values"
-            android:key="lockscreen_clock_font_style"
-            android:title="Lockscreen Clock Font Style" />
+    <PreferenceCategory android:title="Lockscreen Clock Mods">
+        <PreferenceScreen
+            android:summary="Lockscreen Clock Colors &amp; Fonts &amp; seconds"
+            android:title="Individual Clock Colors, Fonts &amp; Seconds mod">
+            <PreferenceCategory android:title="Clock Fonts">
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                    android:defaultValue="false"
+                    android:key="use_lockscreen_clock_font_style"
+                    android:summaryOff="Disabled"
+                    android:summaryOn="Custom font enabled"
+                    android:title="Clock Custom Font Style"
+                    phronesis:packageNameToKill="com.android.systemui" />
+                <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                    android:dependency="use_lockscreen_clock_font_style"
+                    android:entries="@array/lockscreen_font_style_entries"
+                    android:entryValues="@array/lockscreen_font_style_values"
+                    android:key="lockscreen_clock_font_style"
+                    android:title="Lockscreen Clock Font Style" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="Clock Colors">
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="-1"
+                    android:key="kg_clock_hours_color"
+                    android:summary="Choose a color"
+                    android:title="Text Color hours" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="-1"
+                    android:key="kg_clock_minutes_color"
+                    android:summary="Choose a color"
+                    android:title="Text Color minutes" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="-1"
+                    android:key="kg_clock_second_color"
+                    android:summary="Choose a color"
+                    android:title="Text Color seconds Hours" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="-1"
+                    android:key="kg_date_color"
+                    android:summary="Choose a color"
+                    android:title="Date Text Color" />
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                    android:defaultValue="0"
+                    android:key="lock_seconds"
+                    android:summaryOff="Hide"
+                    android:summaryOn="Show"
+                    android:title="Show seconds in hours" />
+            </PreferenceCategory>
+        </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Restore Stock Lockscreen Panel Colors">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:icon="@drawable/restorecolour"
             android:summary="Up to 20s to restore"
             android:title="Restore Stock Lockscreen Colors"
-            phronesis:scriptFileName="lockscreencolorrestore.sh"
-            phronesis:packageNameToKill="com.android.systemui"/>
+            phronesis:packageNameToKill="com.android.systemui"
+            phronesis:scriptFileName="lockscreencolorrestore.sh" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Individual Clock Colors">
-        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-            android:defaultValue="-1"
-            android:key="kg_clock_hours_color"
-            android:summary="Choose a color"
-            android:title="Text Color hours" />
-        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-            android:defaultValue="-1"
-            android:key="kg_clock_minutes_color"
-            android:summary="Choose a color"
-            android:title="Text Color minutes" />
-        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-            android:defaultValue="-1"
-            android:key="kg_clock_second_color"
-            android:summary="Choose a color"
-            android:title="Text Color seconds Hours" />
-        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-            android:defaultValue="-1"
-            android:key="kg_date_color"
-            android:summary="Choose a color"
-            android:title="Date Text Color" />
-        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-            android:defaultValue="0"
-            android:key="lock_seconds"
-            android:summaryOff="Hide"
-            android:summaryOn="Show"
-            android:title="Show seconds in hours" />
-    </PreferenceCategory>
-    <PreferenceCategory android:title="Colorized Weather">
+    <PreferenceCategory android:title="Colorized Weather &amp; Atmospheric Pressure">
         <PreferenceScreen
-            android:summary="Colorise Lockscreen Weather Items"
-            android:title="Weather Items Color">
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#ffffffff"
-                android:key="color_temp"
-                android:summary=""
-                phronesis:isSilent="false"
-                android:title="Text-degree Color"
-                phronesis:packageNameToKill="com.android.systemui"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#ffffffff"
-                android:key="color_high_temp"
-                android:summary=""
-                phronesis:isSilent="false"
-                android:title="Text Color Max Temperature"
-                phronesis:packageNameToKill="com.android.systemui"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#ffffffff"
-                android:key="color_low_temp"
-                android:summary=""
-                phronesis:isSilent="false"
-                android:title="Text Color Min Temperature"
-                phronesis:packageNameToKill="com.android.systemui"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#ffffffff"
-                android:key="color_sunrise"
-                android:summary=""
-                phronesis:isSilent="false"
-                android:title="Color Text Rise"
-                phronesis:packageNameToKill="com.android.systemui"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#ffffffff"
-                android:key="color_location"
-                android:summary=""
-                phronesis:isSilent="false"
-                android:title="Colorized Text Location"
-                phronesis:packageNameToKill="com.android.systemui"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#ffffffff"
-                android:key="color_sunset"
-                android:summary=""
-                phronesis:isSilent="false"
-                android:title="Colorized Text Sunset"
-                phronesis:packageNameToKill="com.android.systemui"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#ffffffff"
-                android:key="color_text"
-                android:summary=""
-                phronesis:isSilent="false"
-                android:title="Colorized Weather Text"
-                phronesis:packageNameToKill="com.android.systemui"/>
-            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-                android:summary="Up to 60s to restore"
-                android:title="Restore Stock Lockscreen Weather Colors"
-                phronesis:scriptFileName="lockweathercolorrestore.sh"
-                phronesis:packageNameToKill="com.android.systemui"/>
+            android:summary="Colorize Weather Items &amp; Bar. Pressure mod"
+            android:title="Weather Items Colors and Bar. Pressure Toggles">
+            <PreferenceCategory android:title="Colorized Weather">
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="color_temp"
+                    android:summary=""
+                    android:title="Text-degree Color"
+                    phronesis:isSilent="false"
+                    phronesis:packageNameToKill="com.android.systemui" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="color_high_temp"
+                    android:summary=""
+                    android:title="Text Color Max Temperature"
+                    phronesis:isSilent="false"
+                    phronesis:packageNameToKill="com.android.systemui" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="color_low_temp"
+                    android:summary=""
+                    android:title="Text Color Min Temperature"
+                    phronesis:isSilent="false"
+                    phronesis:packageNameToKill="com.android.systemui" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="color_sunrise"
+                    android:summary=""
+                    android:title="Color Text Rise"
+                    phronesis:isSilent="false"
+                    phronesis:packageNameToKill="com.android.systemui" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="color_location"
+                    android:summary=""
+                    android:title="Colorized Text Location"
+                    phronesis:isSilent="false"
+                    phronesis:packageNameToKill="com.android.systemui" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="color_sunset"
+                    android:summary=""
+                    android:title="Colorized Text Sunset"
+                    phronesis:isSilent="false"
+                    phronesis:packageNameToKill="com.android.systemui" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                    android:defaultValue="#ffffffff"
+                    android:key="color_text"
+                    android:summary=""
+                    android:title="Colorized Weather Text"
+                    phronesis:isSilent="false"
+                    phronesis:packageNameToKill="com.android.systemui" />
+                <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                    android:summary="Up to 60s to restore"
+                    android:title="Restore Stock Lockscreen Weather Colors"
+                    phronesis:packageNameToKill="com.android.systemui"
+                    phronesis:scriptFileName="lockweathercolorrestore.sh" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="Barometric Pressure Toggles">
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                    android:defaultValue="true"
+                    android:key="sview_pressure_enable"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Barometric Pressure View" />
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                    android:defaultValue="true"
+                    android:dependency="sview_pressure_enable"
+                    android:key="sview_pressure_icon_visible"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Pressure Icon" />
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                    android:defaultValue="true"
+                    android:dependency="sview_pressure_enable"
+                    android:key="sview_pressure_scale_visible"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Pressure Scale Text" />
+            </PreferenceCategory>
         </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Next Alarm Toggles">
@@ -146,7 +176,7 @@
             android:summary="Choose next alarm color"
             android:title="Next Alarm Color"
             phronesis:isSilent="false"
-            phronesis:packageNameToKill="com.android.systemui"/>
+            phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
     <PreferenceCategory
         android:summary="Customize what displays on lockscreen"
@@ -158,7 +188,7 @@
             android:summaryOn="Enabled"
             android:title="Use Custom Carrier Text"
             phronesis:isSilent="false"
-            phronesis:packageNameToKill="com.android.systemui"/>
+            phronesis:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference
             android:defaultValue=""
             android:dependency="custom_lock_carrier"
