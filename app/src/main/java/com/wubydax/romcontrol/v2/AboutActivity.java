@@ -13,7 +13,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wubydax.romcontrol.v2.R;
 import com.wubydax.romcontrol.v2.utils.Constants;
 
 import java.util.Arrays;
@@ -28,7 +27,7 @@ public class AboutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(PreferenceManager.getDefaultSharedPreferences(MyApp.getContext()).getInt(Constants.THEME_PREF_KEY, 0) == 0 ? R.style.AppTheme_NoActionBar : R.style.AppTheme_NoActionBar_Dark);
+        setTheme(PreferenceManager.getDefaultSharedPreferences(MyApp.getContext()).getInt(Constants.THEME_PREF_KEY, getResources().getInteger(R.integer.default_theme)) == 0 ? R.style.AppTheme_NoActionBar : R.style.AppTheme_NoActionBar_Dark);
         setContentView(R.layout.activity_about);
         Toolbar toolbar = (Toolbar) findViewById(R.id.aboutToolbar);
         setSupportActionBar(toolbar);

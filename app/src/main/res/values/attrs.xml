@@ -29,7 +29,6 @@
             <enum name="none" value="0"/>
             <enum name="optional" value="1"/>
             <enum name="imminent" value="2"/>
-
         </attr>
     </declare-styleable>
     <declare-styleable name="IntentDialogPreference">
@@ -41,4 +40,9 @@
         <attr name="rebootColor" format="color"/>
     </declare-styleable>
     <attr name="soundpanel_logo" format="reference"/>
+	<declare-styleable name="GlobalRestorePreference">
+        <attr name="titlesList" format="reference"/>
+        <attr name="keysList" format="reference"/>
+        <attr name="valuesList" format="reference"/>
+    </declare-styleable>
 </resources>

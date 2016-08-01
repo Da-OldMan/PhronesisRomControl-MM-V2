@@ -98,4 +98,5 @@
     <string name="usefull_apps_prefs">Useful Apps</string>
     <string name="utilites_prefs">Utilities</string>
     <string name="imminent_reboot_warning">Your device will reboot IMMEDIATELY upon script completion!!!</string>
+    <string name="restore_dialog_description">This action will restore the following items to stock colors</string>
 </resources>

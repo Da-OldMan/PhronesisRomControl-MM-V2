@@ -758,4 +758,22 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    <string-array name="restore_colors_titles">
+        <item>Some color to restore</item>
+        <item>Some other color to restore</item>
+        <item>Third color to restore</item>
+        <item>Last color to restore</item>
+    </string-array>
+    <string-array name="restore_colors_keys">
+        <item>one_test_color</item>
+        <item>two_test_color</item>
+        <item>three_test_color</item>
+        <item>four_test_color</item>
+    </string-array>
+    <integer-array name="restore_colors_values">
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+    </integer-array>
 </resources>

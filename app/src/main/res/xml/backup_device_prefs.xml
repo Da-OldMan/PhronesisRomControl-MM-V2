@@ -86,4 +86,10 @@
             android:summary=""
             android:title="Touch to Reboot" />
     </PreferenceCategory>
+    <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
+        android:title="Restore colors to stock values"
+        android:summary="This action will restore all status bar colors to their default value as they were originally in stock ui"
+        phronesis:keysList="@array/restore_colors_keys"
+        phronesis:titlesList="@array/restore_colors_titles"
+        phronesis:valuesList="@array/restore_colors_values"/>
 </PreferenceScreen>

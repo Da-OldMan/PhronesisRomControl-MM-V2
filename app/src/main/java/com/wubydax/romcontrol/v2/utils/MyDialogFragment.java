@@ -181,7 +181,7 @@ public class MyDialogFragment extends DialogFragment implements View.OnClickList
 
     private Dialog getThemeChooserDialog() {
         final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MyApp.getContext());
-        final int previouslySelected = sharedPreferences.getInt(Constants.THEME_PREF_KEY, 0);
+        final int previouslySelected = sharedPreferences.getInt(Constants.THEME_PREF_KEY, getResources().getInteger(R.integer.default_theme));
         return new AlertDialog.Builder(getActivity())
 
                 .setTitle(R.string.theme_dialog_title)

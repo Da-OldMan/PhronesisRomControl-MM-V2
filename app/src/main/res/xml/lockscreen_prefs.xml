@@ -84,8 +84,17 @@
             android:summary="Colorize Weather Items &amp; Bar. Pressure mod"
             android:title="Weather Items Colors and Bar. Pressure Toggles">
             <PreferenceCategory android:title="Colorized Weather">
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                    android:defaultValue="true"
+                    android:key="phronesis_weather_visibility"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
+                    android:title="Weather View"
+                    phronesis:isSilent="false"
+                    phronesis:packageNameToKill="com.android.systemui" />
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="#ffffffff"
+                    android:dependency="phronesis_weather_visibility"
                     android:key="color_temp"
                     android:summary=""
                     android:title="Text-degree Color"
@@ -93,6 +102,7 @@
                     phronesis:packageNameToKill="com.android.systemui" />
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="#ffffffff"
+                    android:dependency="phronesis_weather_visibility"
                     android:key="color_high_temp"
                     android:summary=""
                     android:title="Text Color Max Temperature"
@@ -100,6 +110,7 @@
                     phronesis:packageNameToKill="com.android.systemui" />
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="#ffffffff"
+                    android:dependency="phronesis_weather_visibility"
                     android:key="color_low_temp"
                     android:summary=""
                     android:title="Text Color Min Temperature"
@@ -107,6 +118,7 @@
                     phronesis:packageNameToKill="com.android.systemui" />
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="#ffffffff"
+                    android:dependency="phronesis_weather_visibility"
                     android:key="color_sunrise"
                     android:summary=""
                     android:title="Color Text Rise"
@@ -114,6 +126,7 @@
                     phronesis:packageNameToKill="com.android.systemui" />
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="#ffffffff"
+                    android:dependency="phronesis_weather_visibility"
                     android:key="color_location"
                     android:summary=""
                     android:title="Colorized Text Location"
@@ -121,6 +134,7 @@
                     phronesis:packageNameToKill="com.android.systemui" />
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="#ffffffff"
+                    android:dependency="phronesis_weather_visibility"
                     android:key="color_sunset"
                     android:summary=""
                     android:title="Colorized Text Sunset"
@@ -128,6 +142,7 @@
                     phronesis:packageNameToKill="com.android.systemui" />
                 <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                     android:defaultValue="#ffffffff"
+                    android:dependency="phronesis_weather_visibility"
                     android:key="color_text"
                     android:summary=""
                     android:title="Colorized Weather Text"
@@ -141,6 +156,7 @@
             </PreferenceCategory>
             <PreferenceCategory android:title="Barometric Pressure Toggles">
                 <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                    android:dependency="phronesis_weather_visibility"
                     android:defaultValue="true"
                     android:key="sview_pressure_enable"
                     android:summaryOff="Hidden"
