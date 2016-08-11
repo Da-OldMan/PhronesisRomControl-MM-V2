@@ -41,7 +41,7 @@ android {
 }
 
 task installAndLaunchRelease(type: Exec, dependsOn: 'installRelease') {
-    commandLine 'adb', 'shell', 'am', 'start', '-n', 'com.wubydax.romcontrol/.MainActivity'
+    commandLine 'adb', 'shell', 'am', 'start', '-n', 'com.wubydax.romcontrol.v2/.MainActivity'
 }
 
 task pushToDevice(type: Exec, dependsOn: 'assembleRelease') {

@@ -72,12 +72,13 @@
         </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Restore Stock Lockscreen Panel Colors">
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+        <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
             android:icon="@drawable/restorecolour"
-            android:summary="Up to 20s to restore"
-            android:title="Restore Stock Lockscreen Colors"
-            phronesis:packageNameToKill="com.android.systemui"
-            phronesis:scriptFileName="lockscreencolorrestore.sh" />
+            android:summary="This action will restore LockScreen Items colors to Stock"
+            android:title="Restore colors to stock values"
+            phronesis:keysList="@array/restore_lockscreen_colors_keys"
+            phronesis:titlesList="@array/restore_lockscreen_colors_titles"
+            phronesis:valuesList="@array/restore_lockscreen_colors_values" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Colorized Weather &amp; Atmospheric Pressure">
         <PreferenceScreen
@@ -148,16 +149,19 @@
                     android:title="Colorized Weather Text"
                     phronesis:isSilent="false"
                     phronesis:packageNameToKill="com.android.systemui" />
-                <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-                    android:summary="Up to 60s to restore"
-                    android:title="Restore Stock Lockscreen Weather Colors"
+                <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
+                    android:icon="@drawable/restorecolour"
+                    android:summary="This action will restore Weather Items colors to Stock"
+                    android:title="Restore colors to stock values"
+                    phronesis:keysList="@array/restore_lockweather_colors_keys"
                     phronesis:packageNameToKill="com.android.systemui"
-                    phronesis:scriptFileName="lockweathercolorrestore.sh" />
+                    phronesis:titlesList="@array/restore_lockweather_colors_titles"
+                    phronesis:valuesList="@array/restore_lockweather_colors_values" />
             </PreferenceCategory>
             <PreferenceCategory android:title="Barometric Pressure Toggles">
                 <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-                    android:dependency="phronesis_weather_visibility"
                     android:defaultValue="true"
+                    android:dependency="phronesis_weather_visibility"
                     android:key="sview_pressure_enable"
                     android:summaryOff="Hidden"
                     android:summaryOn="Shown"
@@ -191,6 +195,16 @@
             android:key="next_alarm_color"
             android:summary="Choose next alarm color"
             android:title="Next Alarm Color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Lockscreen Swipe Help Text">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="unlock_guide_text"
+            android:summaryOff="Hidden"
+            android:summaryOn="Shown"
+            android:title="Lockscreen Swipe Text"
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>

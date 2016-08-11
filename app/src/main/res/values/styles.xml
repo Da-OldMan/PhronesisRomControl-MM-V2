@@ -8,6 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:dialogTheme">@style/DialogTheme</item>
         <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <!--<item name="android:divider">@null</item>--> Test for disabling dividers
+        <!--<item name="android:dividerHeight">0dp</item>-->
     </style>
 
     <style name="AppThemeDark" parent="Theme.AppCompat">
@@ -44,10 +46,10 @@
     </style>
 
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
-    <integer name="default_theme">1</integer>
+    <integer name="default_theme">0</integer>
 </resources>

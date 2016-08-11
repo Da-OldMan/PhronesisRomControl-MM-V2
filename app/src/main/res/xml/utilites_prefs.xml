@@ -26,6 +26,7 @@
             phronesis:scriptFileName="disnetlib.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Change Device DPI (Applications might not scale correctly outside 420 and 480 DPIs). Auto Hot Reboot">
+        <PreferenceScreen android:title="Change Device DPI - Auto Reboot">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="300 DPI"
@@ -56,33 +57,45 @@
             android:title="480 DPI"
             phronesis:rebootOptions="imminent"
             phronesis:scriptFileName="dpi480.sh" />
+        </PreferenceScreen>
     </PreferenceCategory>
-    <PreferenceCategory android:title="Restore Stock Colors (Takes up to a minute) ">
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="Up to 60s to restore"
-            android:title="Global Stock Color Restore"
+    <PreferenceCategory android:title="Restore Stock Colors ">
+        <PreferenceScreen android:title="Restore Stock Colors" >
+        <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
+            android:summary="This action will do a global restore of all colors to Stock"
+            android:title="Stock Global Colors Restore"
+            phronesis:keysList="@array/restore_global_colors_keys"
             phronesis:packageNameToKill="com.android.systemui"
-            phronesis:scriptFileName="globalcolorrestore.sh" />
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="Up to 20s to restore"
+            phronesis:titlesList="@array/restore_global_colors_titles"
+            phronesis:valuesList="@array/restore_global_colors_values" />
+        <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
+            android:summary="This action will restore Notification Pull Down colors to Stock"
+            android:title="Stock Notification Pull Down Colors"
+            phronesis:keysList="@array/restore_notification_colors_keys"
+            phronesis:packageNameToKill="com.android.systemui"
+            phronesis:titlesList="@array/restore_notification_colors_titles"
+            phronesis:valuesList="@array/restore_notification_colors_values" />
+        <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
+            android:summary="This action will restore Weather Items colors to Stock"
+            android:title="Stock LockScreen Weather Colors"
+            phronesis:keysList="@array/restore_lockweather_colors_keys"
+            phronesis:packageNameToKill="com.android.systemui"
+            phronesis:titlesList="@array/restore_lockweather_colors_titles"
+            phronesis:valuesList="@array/restore_lockweather_colors_values" />
+        <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
+            android:summary="This action will restore LockScreen Item colors to Stock"
+            android:title="Stock LockScreen Clock Colors"
+            phronesis:keysList="@array/restore_lockscreen_colors_keys"
+            phronesis:titlesList="@array/restore_lockscreen_colors_titles"
+            phronesis:valuesList="@array/restore_lockscreen_colors_values" />
+        <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
+            android:summary="This action will restore Statusbar colors to Stock"
             android:title="Stock Statusbar Colors"
+            phronesis:keysList="@array/restore_statusbar_colors_keys"
             phronesis:packageNameToKill="com.android.systemui"
-            phronesis:scriptFileName="statusbarcolorrestore.sh" />
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="Up to 60s to restore"
-            android:title="Stock Notification Colors"
-            phronesis:packageNameToKill="com.android.systemui"
-            phronesis:scriptFileName="notificationcolorrestore.sh" />
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="Up to 60s to restore"
-            android:title="LockScreen Weather Colors"
-            phronesis:packageNameToKill="com.android.systemui"
-            phronesis:scriptFileName="lockweathercolorrestore.sh" />
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="Up to 20s to restore"
-            android:title="Stock Lockscreen Colors"
-            phronesis:packageNameToKill="com.android.systemui"
-            phronesis:scriptFileName="lockscreencolorrestore.sh" />
+            phronesis:titlesList="@array/restore_statusbar_colors_titles"
+            phronesis:valuesList="@array/restore_statusbar_colors_values" />
+        </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Fix Viper4Android Profile Path">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference

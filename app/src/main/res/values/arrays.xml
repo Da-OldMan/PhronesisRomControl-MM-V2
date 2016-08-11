@@ -201,22 +201,27 @@
     </string-array>
     <string-array name="toggle_buttons_background_entries">
         <item>Default</item>
-        <item>Convex</item>
-        <item>Concave</item>
-        <item>Glass</item>
-        <item>Convex square</item>
-        <item>Concave square</item>
-        <item>Glass square</item>
+        <item>Circle</item>
+        <item>Metal Circle</item>
+        <item>Team Darksyde</item>
+        <item>Square</item>
+        <item>Metal Square</item>
+        <item>Dished Circle</item>
+        <item>Domed Circle</item>
+        <item>Glass Circle</item>
+        <item>Dished Square</item>
+        <item>Domed Square</item>
+        <item>Glass Square</item>
         <item>Realms</item>
-        <item>Magnifying glass</item>
-        <item>Dark light</item>
-        <item>Metal</item>
-        <item>Leather</item>
-        <item>Leather rounded</item>
-        <item>Leather round</item>
+        <item>Magnifying Glass</item>
+        <item>Dark Light</item>
+        <item>Leather Square</item>
+        <item>Leather Rounded</item>
+        <item>Leather Round</item>
     </string-array>
     <string-array name="toggle_buttons_background_values">
         <item>0</item>
+        <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
@@ -230,20 +235,27 @@
         <item>12</item>
         <item>13</item>
         <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
     </string-array>
     <array name="toggle_buttons_background_drawables">
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_default</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_convex</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_concave</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_glass</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_convex_square</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_concave_square</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_glass_square</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_circle</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_circle_metal</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_darksyde</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square_metal</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_circle_dish</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_circle_dome</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_circle_glass</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square_dish</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square_dome</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square_glass</item>
         <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_realms</item>
         <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_magnifying_glass</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_dark_light</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_metal</item>
-        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square_darklight</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather_square</item>
         <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather_rounded</item>
         <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather_round</item>
     </array>
@@ -728,14 +740,6 @@
         <item>0</item>
         <item>1</item>
     </string-array>
-    <string-array name="carrier_entries">
-        <item>Actual carrier text</item>
-        <item>Custom text</item>
-    </string-array>
-    <string-array name="carrier_entry_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
     <string-array name="data_usage_gravity_entries">
         <item>To end</item>
         <item>Center horizontal</item>
@@ -758,19 +762,305 @@
         <item>2</item>
         <item>3</item>
     </string-array>
-    <string-array name="restore_colors_titles">
-        <item>Some color to restore</item>
-        <item>Some other color to restore</item>
-        <item>Third color to restore</item>
-        <item>Last color to restore</item>
+    <string-array name="carrier_entries">
+        <item>Actual carrier text</item>
+        <item>Custom text</item>
     </string-array>
-    <string-array name="restore_colors_keys">
-        <item>one_test_color</item>
-        <item>two_test_color</item>
-        <item>three_test_color</item>
-        <item>four_test_color</item>
+    <string-array name="carrier_entry_values">
+        <item>0</item>
+        <item>1</item>
     </string-array>
-    <integer-array name="restore_colors_values">
+    <string-array name="restore_notification_colors_titles">
+        <item>RAM Cleaner</item>
+        <item>RAM Text</item>
+        <item>QuickLauncher Text</item>
+        <item>QuickLauncher Background</item>
+        <item>Expanded Header bg Color</item>
+        <item>Clock Hour</item>
+        <item>Clock Minutes</item>
+        <item>Clock Seconds</item>
+        <item>Date</item>
+        <item>Header Icon Color</item>
+        <item>Quick Settings Panel bg Color</item>
+        <item>QuickToggle Bg Color</item>
+        <item>Toggle Icon On Color</item>
+        <item>Toggle Icon Off Color</item>
+        <item>Toggle Text Color</item>
+        <item>Brightness Bg Color</item>
+        <item>Data Usage Bg Color</item>
+        <item>Data Usage Color</item>
+        <item>QuickConnect Bg Color</item>
+        <item>Notification Bg Color</item>
+        <item>Pull Down Text Color</item>
+        <item>Edit Button Color</item>
+        <item>QuickConnect Color</item>
+    </string-array>
+    <string-array name="restore_notification_colors_keys">
+        <item>db_inkeffect_pekaka_memkiller_picker</item>
+        <item>memo_ram_text_color</item>
+        <item>quick_launch_text_color</item>
+        <item>quick_launch_background_color</item>
+        <item>expanded_header_bg_color</item>
+        <item>header_mod_clock_hours_color</item>
+        <item>header_mod_clock_minutes_color</item>
+        <item>header_mod_clock_seconds_color</item>
+        <item>date_header_color</item>
+        <item>expand_header_icon_color</item>
+        <item>quick_settings_panel_bg_color</item>
+        <item>toggle_buttons_background_color</item>
+        <item>toggle_icon_on_color</item>
+        <item>toggle_icon_off_color</item>
+        <item>toggle_text_color</item>
+        <item>brightness_background_color</item>
+        <item>data_usage_view_bg_color</item>
+        <item>data_usage_text_color</item>
+        <item>quick_connect_bg_color</item>
+        <item>notification_background_color</item>
+        <item>pulldown_text</item>
+        <item>edit_color</item>
+        <item>quickconnect_color</item>
+    </string-array>
+    <integer-array name="restore_notification_colors_values">
+        <item>-16026407</item>
+        <item>-1</item>
+        <item>-14791048</item>
+        <item>00000000</item>
+        <item>-1643795</item>
+        <item>-14791048</item>
+        <item>-14791048</item>
+        <item>-14791048</item>
+        <item>-13476476</item>
+        <item>-14791048</item>
+        <item>-1643795</item>
+        <item>-657416</item>
+        <item>-14318119</item>
+        <item>-4930351</item>
+        <item>-14791048</item>
+        <item>-1643795</item>
+        <item>-1643795</item>
+        <item>-14791048</item>
+        <item>-4340019</item>
+        <item>-328966</item>
+        <item>-14791048</item>
+        <item>-14791048</item>
+        <item>-14791048</item>
+    </integer-array>
+    <string-array name="shape_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="shape_entries">
+        <item>Stock shape</item>
+        <item>Rounded corners</item>
+    </string-array>
+    <integer-array name="restore_statusbar_colors_values">
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+    </integer-array>
+    <string-array name="restore_statusbar_colors_keys">
+        <item>statusbar_wifi_color</item>
+        <item>statusbar_signal_color</item>
+        <item>statusbar_data_color</item>
+        <item>statusbar_icon_color</item>
+        <item>battery_bar_color</item>
+        <item>killprocess_carrier_txt_color</item>
+        <item>network_traffic_color</item>
+    </string-array>
+    <string-array name="restore_statusbar_colors_titles">
+        <item>Wi-Fi</item>
+        <item>Mobile Signal</item>
+        <item>Mobile Data Type</item>
+        <item>Statusbar Icon Color</item>
+        <item>Battery Bar Color</item>
+        <item>Carrier Text</item>
+        <item>Network Traffic</item>
+    </string-array>
+    <string-array name="restore_lockweather_colors_keys">
+        <item>color_temp</item>
+        <item>color_high_temp</item>
+        <item>color_low_temp</item>
+        <item>color_sunrise</item>
+        <item>color_location</item>
+        <item>color_sunset</item>
+        <item>color_text</item>
+    </string-array>
+    <string-array name="restore_lockweather_colors_titles">
+        <item>Temperature Color</item>
+        <item>Max Temp.</item>
+        <item>Min Temp</item>
+        <item>Sunrise</item>
+        <item>Location</item>
+        <item>Sunset</item>
+        <item>Texts</item>
+    </string-array>
+    <integer-array name="restore_lockweather_colors_values">
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+    </integer-array>
+    <string-array name="restore_lockscreen_colors_keys">
+        <item>kg_clock_hours_color</item>
+        <item>kg_clock_minutes_color</item>
+        <item>kg_clock_second_color</item>
+        <item>kg_date_color</item>
+        <item>next_alarm_color</item>
+        <item>carrier_color</item>
+    </string-array>
+    <string-array name="restore_lockscreen_colors_titles">
+        <item>Hours Color</item>
+        <item>Minutes Color</item>
+        <item>Seconds Color</item>
+        <item>Date Color</item>
+        <item>Next Alart</item>
+        <item>Carrier Color</item>
+    </string-array>
+    <integer-array name="restore_lockscreen_colors_values">
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+    </integer-array>
+    <string-array name="restore_global_colors_keys">
+        <item>db_inkeffect_pekaka_memkiller_picker</item>
+        <item>memo_ram_text_color</item>
+        <item>quick_launch_text_color</item>
+        <item>quick_launch_background_color</item>
+        <item>expanded_header_bg_color</item>
+        <item>header_mod_clock_hours_color</item>
+        <item>header_mod_clock_minutes_color</item>
+        <item>header_mod_clock_seconds_color</item>
+        <item>date_header_color</item>
+        <item>expand_header_icon_color</item>
+        <item>quick_settings_panel_bg_color</item>
+        <item>toggle_buttons_background_color</item>
+        <item>toggle_icon_on_color</item>
+        <item>toggle_icon_off_color</item>
+        <item>toggle_text_color</item>
+        <item>brightness_background_color</item>
+        <item>data_usage_view_bg_color</item>
+        <item>data_usage_text_color</item>
+        <item>quick_connect_bg_color</item>
+        <item>notification_bg_color</item>
+        <item>pulldown_text</item>
+        <item>edit_color</item>
+        <item>quickconnect_color</item>
+        <item>statusbar_wifi_color</item>
+        <item>statusbar_signal_color</item>
+        <item>statusbar_data_color</item>
+        <item>statusbar_icon_color</item>
+        <item>battery_bar_color</item>
+        <item>killprocess_carrier_txt_color</item>
+        <item>network_traffic_color</item>
+        <item>color_temp</item>
+        <item>color_high_temp</item>
+        <item>color_low_temp</item>
+        <item>color_sunrise</item>
+        <item>color_location</item>
+        <item>color_sunset</item>
+        <item>color_text</item>
+        <item>kg_clock_hours_color</item>
+        <item>kg_clock_minutes_color</item>
+        <item>kg_clock_second_color</item>
+        <item>kg_date_color</item>
+        <item>next_alarm_color</item>
+        <item>carrier_color</item>
+    </string-array>
+    <string-array name="restore_global_colors_titles">
+        <item>RAM Cleaner</item>
+        <item>RAM Text</item>
+        <item>QuickLauncher Text</item>
+        <item>QuickLauncher Background</item>
+        <item>Expanded Header bg Color</item>
+        <item>Clock Hour</item>
+        <item>Clock Minutes</item>
+        <item>Clock Seconds</item>
+        <item>Date</item>
+        <item>Header Icon Color</item>
+        <item>Quick Settings Panel bg Color</item>
+        <item>QuickToggle Bg Color</item>
+        <item>Toggle Icon On Color</item>
+        <item>Toggle Icon Off Color</item>
+        <item>Toggle Text Color</item>
+        <item>Brightness Bg Color</item>
+        <item>Data Usage Bg Color</item>
+        <item>Data Usage Color</item>
+        <item>QuickConnect Bg Color</item>
+        <item>Notification Bg Color</item>
+        <item>Pull Down Text Color</item>
+        <item>Edit Button Color</item>
+        <item>QuickConnect Color</item>
+        <item>Wi-Fi</item>
+        <item>Mobile Signal</item>
+        <item>Mobile Data Type</item>
+        <item>Statusbar Icon Color</item>
+        <item>Battery Bar Color</item>
+        <item>Carrier Text</item>
+        <item>Network Traffic</item>
+        <item>Temperature Color</item>
+        <item>Max Temp.</item>
+        <item>Min Temp</item>
+        <item>Sunrise</item>
+        <item>Location</item>
+        <item>Sunset</item>
+        <item>Texts</item>
+        <item>Hours Color</item>
+        <item>Minutes Color</item>
+        <item>Seconds Color</item>
+        <item>Date Color</item>
+        <item>Next Alart</item>
+        <item>Carrier Color</item>
+    </string-array>
+    <integer-array name="restore_global_colors_values">
+        <item>-16026407</item>
+        <item>-1</item>
+        <item>-14791048</item>
+        <item>0</item>
+        <item>-1643795</item>
+        <item>-14791048</item>
+        <item>-14791048</item>
+        <item>-14791048</item>
+        <item>-13476476</item>
+        <item>-14791048</item>
+        <item>-1643795</item>
+        <item>-657416</item>
+        <item>-14318119</item>
+        <item>-4930351</item>
+        <item>-14791048</item>
+        <item>-1643795</item>
+        <item>-1643795</item>
+        <item>-14791048</item>
+        <item>-4340019</item>
+        <item>-328966</item>
+        <item>-14791048</item>
+        <item>-14791048</item>
+        <item>-14791048</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>

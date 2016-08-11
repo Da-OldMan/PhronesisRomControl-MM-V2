@@ -5,21 +5,21 @@
         android:layout_width="fill_parent"
         android:layout_height="200.0dip"
         android:layout="@layout/soundpanel_logo" />
-        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
-            android:title="Samsung Music Player"
-            phronesis:componentName="com.sec.android.app.music/com.sec.android.app.music.common.activity.MusicMainActivity" /> <!--android:icon="@drawable/smusic"-->
-        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
-            android:title="Beats Audio"
-            phronesis:componentName="com.zloban.beatsfx/com.zloban.beatsfx.beatsAudioControlPanelActivity" /> <!--android:icon="@drawable/beat"-->
-        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
-            android:title="Viper4Android"
-            phronesis:componentName="com.vipercn.viper4android_v2/com.vipercn.viper4android_v2.activity.ViPER4Android" /> <!--android:icon="@drawable/viper"-->
-        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
-            android:title="Dolby Atmos"
-            phronesis:componentName="com.atmos.daxappUI/com.atmos.daxappUI.MainActivity" /> <!--android:icon="@drawable/dolby"-->
-        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
-            android:title="Samsung Soundalive"
-            phronesis:componentName="com.sec.android.app.soundalive/com.sec.android.app.soundalive.SAControlPanelActivity" /> <!--android:icon="@drawable/salive"-->
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Samsung Music Player"
+        phronesis:componentName="com.sec.android.app.music/com.sec.android.app.music.common.activity.MusicMainActivity" />
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Beats Audio"
+        phronesis:componentName="com.zloban.beatsfx/com.zloban.beatsfx.beatsAudioControlPanelActivity" />
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Viper4Android"
+        phronesis:componentName="com.vipercn.viper4android_v2/com.vipercn.viper4android_v2.activity.ViPER4Android" />
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Dolby Atmos"
+        phronesis:componentName="com.atmos.daxappUI/com.atmos.daxappUI.MainActivity" />
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Samsung Soundalive"
+        phronesis:componentName="com.sec.android.app.soundalive/com.sec.android.app.soundalive.SAControlPanelActivity" />
     <PreferenceCategory android:title="Screen Off Music Control" />
     <PreferenceScreen
         android:icon="@drawable/music_control"

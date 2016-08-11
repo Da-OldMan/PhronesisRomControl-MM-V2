@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="changelog_items">
+        <item>Fixed PIN Quick Unlock kicking in upon fresh install when SIM PIN is enabled</item>
         <item>Fix SystemUI Power saving mode showing grey statusbar</item>
         <item>Fix Slow motion camera in stock camera</item>
         <item>Fix "Close" message in stock SystemUI</item>
@@ -14,7 +15,20 @@
         <item>Humidity on lockscree. Next release might actually see a toggle for all lockscreen weather items</item>
         <item>Potato clock removed from lockscreen</item>
         <item>Added option to revoke all granted permissions on device</item>
+        <item>Rom Control V2 integrated. More attractive and better performance. With a lot of new option</item>
+        <item>Rework the Battery bar for auto color. Color changes depending on the battery level</item>
+        <item>ios implemented. A seperate file need flashing which will give tons of options to change your statusbar icons, including bluetooth and alarm icon</item>
+        <item>Potato clock removed from lockscreen</item>
+        <item>Choose between any custom background or solid or gradient color backgrounds</item>
+        <item>Dialpad digits, letters, divider, digits pressed are colorable</item>
+        <item>All options can be turned on or off so they will not conflict with installed themes</item>
+        <item>Scheduling SMS FC fixed</item>
+        <item>All Samsung apps updated</item>
+        <item>Rom can now be debloated in aroma while still making the device stable with zero impact</item>
+        <item>Aroma theme rework significantly</item>
+        <item>Option to have debloated ROM</item>
+        <item>Please see our thread for full changelog</item>
     </string-array>
 
-    <string name="rom_version_for_changelog">Phronesis MM N5 v1.3</string>
+    <string name="rom_version_for_changelog">Phronesis MM N5 v2.0</string>
 </resources>

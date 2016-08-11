@@ -3,20 +3,10 @@
     xmlns:phronesis="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory android:title="SystemUI Preference. Auto Hot Reboot">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="Round corner notifications and recent tasks"
-            android:title="Round SystemUI"
+            android:summary="Advanced SystemUI with many options"
+            android:title="Advanced SystemUI"
             phronesis:rebootOptions="imminent"
-            phronesis:scriptFileName="mmround.sh" />
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="Square corner notifications and recent tasks"
-            android:title="Square SystemUI"
-            phronesis:rebootOptions="imminent"
-            phronesis:scriptFileName="mmsquare.sh" />
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="Not suitable for Samsung Themes"
-            android:title="SystemUI with Notification Panel color mods"
-            phronesis:rebootOptions="imminent"
-            phronesis:scriptFileName="notificolormods.sh" />
+            phronesis:scriptFileName="sysuiadvenced.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Not a single mod"
             android:title="Pure Stock SystemUI"
@@ -74,11 +64,11 @@
     <PreferenceCategory android:title="Volume slider Sound">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:title="Disable Volume Slider Sound"
-            phronesis:packageNameToKill="com.android.systemui"/>
+            phronesis:packageNameToKill="com.android.systemui"
             phronesis:scriptFileName="disvolsnds.sh" />
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:title="Enable Volume Slider Sound"
-            phronesis:packageNameToKill="com.android.systemui"/>
+            phronesis:packageNameToKill="com.android.systemui"
             phronesis:scriptFileName="envolsnds.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Battery Sound">

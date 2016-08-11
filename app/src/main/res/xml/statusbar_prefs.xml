@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:phronesis="http://schemas.android.com/apk/res-auto">
-    <PreferenceCategory android:title="Statusbar Icons">
+    <PreferenceCategory android:title="StatusBar Layout">
+    <PreferenceScreen android:title="Change StatusBar Layout"
+    android:summary="Customize the layout of the StatusBar" >
+    <PreferenceCategory android:title="Statusbar Icon Visibility">
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="true"
             android:key="statusbar_hide_bluetooth"
@@ -19,7 +22,7 @@
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Statusbar Clock layout">
+    <PreferenceCategory android:title="Statusbar Clock Layout">
         <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
             android:icon="@drawable/potatoclock"
             android:title="Potato Clock"
@@ -33,6 +36,8 @@
             android:key="leftsignal"
             android:title="Statusbar Signal Position" />
     </PreferenceCategory>
+    </PreferenceScreen>
+    </PreferenceCategory>/
     <PreferenceCategory android:title="Immersive Mode">
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:defaultValue="immersive.full"
@@ -42,6 +47,7 @@
             android:title="Immersive Mode (Fullscreen)" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/dynamic_status_bar_title">
+    <PreferenceScreen android:title="Dynamic StatusBar">
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="false"
             android:key="dynamic_toggle"
@@ -70,15 +76,28 @@
             android:key="dynamic_status_bar_filter_value"
             android:max="70"
             android:title="@string/intensity_filter_title" />
+    </PreferenceScreen>
     </PreferenceCategory>
-    <PreferenceCategory android:title="Restore Stock Statusbar Colors">
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+    <PreferenceCategory android:title="Enable Color Statusbar">
+        <com.wubydax.romcontrol.v2.prefs.FilePreference
+            android:defaultValue="false"
+            android:key="modcfg_statusbar_colors"
+            android:summaryOff="Using custom colors"
+            android:summaryOn="Stock color set"
+            android:title="Select Statusbar stock or custom color"
+            phronesis:isSilent="false"
+            phronesis:packageNameToKill="com.android.systemui" />
+        <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
             android:icon="@drawable/restorecolour"
-            android:summary="Up to 20s to restore"
-            android:title="Restore Stock Statusbar Panel Colors"
+            android:summary="This action will restore Statusbar colors to Stock"
+            android:title="Restore colors to stock values"
+            phronesis:keysList="@array/restore_statusbar_colors_keys"
             phronesis:packageNameToKill="com.android.systemui"
-            phronesis:scriptFileName="statusbarcolorrestore.sh" />
+            phronesis:titlesList="@array/restore_statusbar_colors_titles"
+            phronesis:valuesList="@array/restore_statusbar_colors_values" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="Custom Icon Colors" >
+    <PreferenceScreen android:title="Set Icon Colors">
     <PreferenceCategory android:title="Individual Colors">
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="-1"
@@ -105,7 +124,9 @@
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Linear Batterybar Settings">
+    </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Batterybar">
         <PreferenceScreen
             android:summary="Display Line on top for battery"
             android:title="Battery Bar">
@@ -140,6 +161,9 @@
         </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Statusbar Battery Icon">
+        <PreferenceScreen
+            android:summary="Choose battery icons"
+            android:title="Battery Icon">
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="0"
             android:key="display_battery_percentage"
@@ -161,8 +185,12 @@
         <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
             android:title="3Minit Battery Mod"
             phronesis:componentName="com.three.minit.minitbatterysettings.free/com.three.minit.minitbatterysettings.MainActivity" />
+        </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Network traffic speed display">
+        <PreferenceScreen
+            android:summary="Display network traffic speed in StatusBar"
+            android:title="Network Traffic">
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:defaultValue="0"
             android:entries="@array/traffic_entries"
@@ -191,5 +219,6 @@
             android:key="network_traffic_autohide_threshold"
             android:title="Autohide Threshold"
             phronesis:unitsValue="Kb/s" />
+        </PreferenceScreen>
     </PreferenceCategory>
 </PreferenceScreen>
