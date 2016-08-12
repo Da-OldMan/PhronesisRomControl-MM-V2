@@ -5,10 +5,6 @@
         <PreferenceScreen android:title="Backup Settings and Data">
             <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
                 android:summary=""
-                android:title="Backup System Settings"
-                phronesis:scriptFileName="backupdevicesettings.sh" />
-            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-                android:summary=""
                 android:title="Backup Permissions on Device"
                 phronesis:scriptFileName="permissionsbackup.sh" />
             <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
@@ -46,11 +42,6 @@
         <PreferenceScreen android:title="Restore Settings and Data">
             <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
                 android:summary="Auto reboots to apply settings"
-                android:title="Restore System Settings"
-                phronesis:rebootOptions="imminent"
-                phronesis:scriptFileName="restoredevicesettings.sh" />
-            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-                android:summary="Auto reboots to apply settings"
                 android:title="Restore Permissions on Device"
                 phronesis:rebootOptions="imminent"
                 phronesis:scriptFileName="permissionsrestore.sh" />
@@ -82,7 +73,7 @@
                 phronesis:scriptFileName="calendarrestore.sh" />
         </PreferenceScreen>
     </PreferenceCategory>
-    <PreferenceCategory android:title="Soft Reboot Device">
+    <PreferenceCategory android:title="Reboot Device">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:icon="@drawable/powerlogo"
             android:summary=""

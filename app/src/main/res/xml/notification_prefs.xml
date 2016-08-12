@@ -83,6 +83,12 @@
             android:summaryOn="Ram Bar is shown in Recent Apps"
             android:title="AOKP Ram Bar" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="Brightness Panel Visibility">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="notification_panel_brightness_adjustment"
+            android:title="Brightness Slider Visibility" />
+    </PreferenceCategory>
     <PreferenceCategory android:title="RAM content display">
         <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
             android:defaultValue="true"
@@ -105,6 +111,7 @@
             android:summaryOff="Multi-user Avatar hidden"
             android:summaryOn="Multi-user Avatar shown"
             android:title="Multi-user Avatar"
+            phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
     <PreferenceCategory android:title="IME(keyboard) Notification">
@@ -235,8 +242,8 @@
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Notification Header Panel Layout &amp; Colors">
-        <PreferenceScreen android:title="Notification Panel Header Layout &amp; Colors">
+    <PreferenceCategory android:title="Notification Pull Down Customization">
+        <PreferenceScreen android:title="Expanded Header Customization">
             <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                 android:defaultValue="1"
                 android:key="link_colors"
@@ -246,9 +253,9 @@
                 phronesis:isSilent="false"
                 phronesis:packageNameToKill="com.android.systemui" />
             <PreferenceScreen
-                android:summary="Customize Layout of Notification Header"
-                android:title="Notification Header Layout">
-                <PreferenceCategory android:title="Notification Header Layout Customization">
+                android:summary="Choose between stock and modded clock"
+                android:title="Clock Types Visibility">
+                <PreferenceCategory android:title="Enable Stock or Moded Clock">
                     <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                         android:defaultValue="0"
                         android:key="hide_header_stock_clock"
@@ -270,46 +277,46 @@
                         android:title="Mod clock second" />
                 </PreferenceCategory>
             </PreferenceScreen>
-            <PreferenceScreen android:title="Notification Header Color Customization ">
-                <PreferenceCategory android:title="Notification Header Panel Colors">
+            <PreferenceScreen android:title="Notification Pull Down Item Colors ">
+                <PreferenceCategory android:title="Pull Down Items and Background Color">
                     <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                        android:defaultValue="#ffe9eaec"
+                        android:defaultValue="\#ffe9eaec"
                         android:dependency="link_colors"
                         android:key="expanded_header_bg_color"
                         android:summary="Set custom color"
                         android:title="Expanded header bg color" />
                     <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                        android:defaultValue="#ff325d84"
+                        android:defaultValue="\#ff325d84"
                         android:dependency="link_colors"
                         android:key="header_mod_clock_hours_color"
                         android:summary="Set text color"
                         android:title="Mod clock hours color" />
                     <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                        android:defaultValue="#ff325d84"
+                        android:defaultValue="\#ff325d84"
                         android:dependency="link_colors"
                         android:key="header_mod_clock_minutes_color"
                         android:summary="Set text color"
                         android:title="Mod clock minute color" />
                     <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                        android:defaultValue="#ff325d84"
+                        android:defaultValue="\#ff325d84"
                         android:dependency="link_colors"
                         android:key="header_mod_clock_seconds_color"
                         android:summary="Set text color"
                         android:title="Mod clock second color" />
                     <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                        android:defaultValue="#ff325d84"
+                        android:defaultValue="\#ff325d84"
                         android:dependency="link_colors"
                         android:key="date_header_color"
                         android:summary="Set text color"
                         android:title="Mod date color" />
                     <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                        android:defaultValue="#ff325d84"
+                        android:defaultValue="\#ff325d84"
                         android:dependency="link_colors"
                         android:key="expand_header_icon_color"
                         android:summary="Set custom color"
                         android:title="Expanded header setting icon color" />
                     <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                        android:defaultValue="#ff325d84"
+                        android:defaultValue="\#ff325d84"
                         android:dependency="link_colors"
                         android:key="edit_color"
                         android:summary="Choose text color"
@@ -320,8 +327,8 @@
     </PreferenceCategory>
     <PreferenceCategory android:title="Quick Toggles Panel Colors/Custom Icons">
         <PreferenceScreen
-            android:summary="Customize the Toggle Appearance"
-            android:title="Quick Toggles Panel Icons &amp; Colors">
+            android:summary="Customize Quick Toggle Appearance"
+            android:title="Quick Toggles Icons &amp; Colors">
             <com.wubydax.romcontrol.v2.prefs.MyListPreference
                 android:defaultValue="5"
                 android:entries="@array/toggle_entries"
@@ -389,9 +396,43 @@
             android:defaultValue="#ffe9eaec"
             android:dependency="link_colors"
             android:key="brightness_background_color"
-            android:title="Brightness background color"
-            phronesis:isSilent="false"
-            phronesis:packageNameToKill="com.android.systemui" />
+            android:title="Brightness background color" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Data Usage view preferences">
+        <PreferenceScreen
+            android:summary="Customize the Data Usage Text"
+            android:title="Data Usage Customization">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="data_usage_visibility"
+                android:summaryOff="Hidden"
+                android:summaryOn="Shown"
+                android:title="Data usage view visibility" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#e61e4e78"
+                android:dependency="data_usage_visibility"
+                android:key="data_usage_text_color"
+                android:title="Data usage text color" />
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="0"
+                android:dependency="data_usage_visibility"
+                android:entries="@array/data_usage_gravity_entries"
+                android:entryValues="@array/data_usage_gravity_values"
+                android:key="data_usage_text_gravity"
+                android:title="Data usage text gravity" />
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="0"
+                android:dependency="data_usage_visibility"
+                android:entries="@array/data_usage_text_style_entries"
+                android:entryValues="@array/data_usage_text_style_values"
+                android:key="data_usage_view_text_style"
+                android:title="Data usage text style" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#ffe9eaec"
+                android:key="data_usage_view_bg_color"
+                android:summary="Set custom color"
+                android:title="Data usage view bg color" />
+        </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Quick Connect Panel Bg. Colors">
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
@@ -437,18 +478,21 @@
             android:entries="@array/shape_entries"
             android:entryValues="@array/shape_values"
             android:key="notification_background_form"
-            android:title="Notification bg shape" />
+            android:title="Notification Bg shape" />
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="0"
             android:key="notification_bg_color"
-            android:title="Notification bg color" />
+            android:title="Notification Bg color" />
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
             android:defaultValue="#ff325d84"
             android:key="pulldown_text"
             android:title="Notification Text Color"
+            phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="SystemUI - Round or Square Corners" android:summary="Change corners in Recents, Volume and more">
+    <PreferenceCategory
+        android:summary="Change corners in Recents, Volume and more"
+        android:title="SystemUI - Round or Square Corners">
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:defaultValue="0"
             android:entries="@array/systemui_type_entries"
@@ -457,42 +501,6 @@
             android:title="Round or Square Corners"
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui" />
-    </PreferenceCategory>
-    <PreferenceCategory android:title="Data Usage view preferences">
-        <PreferenceScreen
-            android:summary="Customize the Data Usage Text"
-            android:title="Data Usage Customization">
-            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
-                android:defaultValue="true"
-                android:key="data_usage_visibility"
-                android:summaryOff="Hidden"
-                android:summaryOn="Shown"
-                android:title="Data usage view visibility" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#e61e4e78"
-                android:dependency="data_usage_visibility"
-                android:key="data_usage_text_color"
-                android:title="Data usage text color" />
-            <com.wubydax.romcontrol.v2.prefs.MyListPreference
-                android:defaultValue="0"
-                android:dependency="data_usage_visibility"
-                android:entries="@array/data_usage_gravity_entries"
-                android:entryValues="@array/data_usage_gravity_values"
-                android:key="data_usage_text_gravity"
-                android:title="Data usage text gravity" />
-            <com.wubydax.romcontrol.v2.prefs.MyListPreference
-                android:defaultValue="0"
-                android:dependency="data_usage_visibility"
-                android:entries="@array/data_usage_text_style_entries"
-                android:entryValues="@array/data_usage_text_style_values"
-                android:key="data_usage_view_text_style"
-                android:title="Data usage text style" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
-                android:defaultValue="#ffe9eaec"
-                android:key="data_usage_view_bg_color"
-                android:summary="Set custom color"
-                android:title="Data usage view bg color" />
-        </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Device info on notification settings">
         <PreferenceScreen android:title="Device info customization">
@@ -568,7 +576,7 @@
             </PreferenceCategory>
         </PreferenceScreen>
     </PreferenceCategory>
-    <PreferenceCategory android:title="Carrier label text preferences">
+    <PreferenceCategory android:title="Carrier label text preferences (Device Info)">
         <PreferenceScreen
             android:summary="Customize the Carrier Label"
             android:title="Carrier Label Customizatin">

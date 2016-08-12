@@ -33,5 +33,8 @@
         android:summary="Show, Backup and Restore"
         android:title="WIFI Password Management"
         phronesis:componentName="com.vorsk.wifirecovery/com.vorsk.wifirecovery.HomeActivity" />
-    />
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Configure flashlight for Calls &amp; SMS"
+        android:title="Caller Flashlight Settings"
+        phronesis:componentName="ru.evg.and.app.flashoncall/ru.evg.and.app.flashoncall.MainActivity" />
 </PreferenceScreen>

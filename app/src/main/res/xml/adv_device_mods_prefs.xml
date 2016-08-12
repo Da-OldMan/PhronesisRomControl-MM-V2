@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:phronesis="http://schemas.android.com/apk/res-auto">
-    <PreferenceCategory android:title="SystemUI Preference. Auto Hot Reboot">
+    <PreferenceCategory android:title="SystemUI Preference">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="Advanced SystemUI with many options"
             android:title="Advanced SystemUI"
@@ -14,7 +14,7 @@
             phronesis:scriptFileName="pstock.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="---------------------------------------------------------------" />
-    <PreferenceCategory android:title="Frameworks Preference (Auto Hot Reboot)">
+    <PreferenceCategory android:title="Frameworks Preference">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary=""
             android:title="Round corner frame panel"
@@ -27,20 +27,14 @@
             phronesis:scriptFileName="stockframe.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="---------------------------------------------------------------" />
-    <PreferenceCategory android:title="Samsung Keyboard Preference (Auto Hot Reboot)">
+    <PreferenceCategory android:title="Statusbar IconThemer (Phone boots into recovery mode)">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary=""
-            android:title="Samsung Keyboard v2.5"
-            phronesis:rebootOptions="imminent"
-            phronesis:scriptFileName="keyboard250.sh" />
-        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
-            android:summary="No Hand Writing"
-            android:title="Samsung Keyboard v3"
-            phronesis:rebootOptions="imminent"
-            phronesis:scriptFileName="keyboard300.sh" />
+            android:summary="Reboot into recovery mode to flash IconThemer"
+            android:title="Change Statusbar Icons"
+            phronesis:scriptFileName="rebootrecovey.sh" />
     </PreferenceCategory>
     <PreferenceCategory android:title="---------------------------------------------------------------" />
-    <PreferenceCategory android:title="Left Softkey ShortPress (Auto Hot Reboot)">
+    <PreferenceCategory android:title="Left Softkey ShortPress">
         <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
             android:summary="LongPress Customisable"
             android:title="Map to Recent Task"

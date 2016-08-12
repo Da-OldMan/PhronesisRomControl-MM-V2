@@ -22,6 +22,15 @@
             phronesis:isSilent="false"
             phronesis:packageNameToKill="com.android.systemui" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="Lockscreen Timeout">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:defaultValue="10000"
+            android:entries="@array/display_timeout_entries"
+            android:entryValues="@array/display_timeout_values"
+            android:key="display_timeout_delay"
+            android:title="Lockscreen Display Timeout"
+            phronesis:packageNameToKill="com.android.systemui" />
+    </PreferenceCategory>
     <PreferenceCategory android:title="Lockscreen Clock Mods">
         <PreferenceScreen
             android:summary="Lockscreen Clock Colors &amp; Fonts &amp; seconds"
@@ -33,6 +42,7 @@
                     android:summaryOff="Disabled"
                     android:summaryOn="Custom font enabled"
                     android:title="Clock Custom Font Style"
+                    phronesis:isSilent="false"
                     phronesis:packageNameToKill="com.android.systemui" />
                 <com.wubydax.romcontrol.v2.prefs.MyListPreference
                     android:dependency="use_lockscreen_clock_font_style"
