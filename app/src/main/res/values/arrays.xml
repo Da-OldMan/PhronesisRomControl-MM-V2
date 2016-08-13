@@ -135,6 +135,38 @@
         <item>1500</item>
         <item>2000</item>
     </string-array>
+    <string-array name="traffic_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="traffic_state_items">
+        <item>Disable view</item>
+        <item>Upload only</item>
+        <item>Download only</item>
+        <item>Upload and Download</item>
+    </string-array>
+    <string-array name="arrow_position_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="arrow_position_entries">
+        <item>To end of view</item>
+        <item>To start of view</item>
+    </string-array>
+    <string-array name="traffic_style_entries">
+        <item>Normal</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
+    </string-array>
+    <string-array name="traffic_style_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
     <string-array name="StatusAppListColumnName">
         <item>5</item>
         <item>6</item>
@@ -1041,7 +1073,7 @@
         <item>-1643795</item>
         <item>-14791048</item>
         <item>-4340019</item>
-        <item>-328966</item>
+        <item>0</item>
         <item>-14791048</item>
         <item>-14791048</item>
         <item>-14791048</item>
@@ -1066,38 +1098,6 @@
         <item>-1</item>
         <item>-1</item>
     </integer-array>
-    <string-array name="traffic_state_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-    <string-array name="traffic_state_items">
-        <item>Disable view</item>
-        <item>Upload only</item>
-        <item>Download only</item>
-        <item>Upload and Download</item>
-    </string-array>
-    <string-array name="arrow_position_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="arrow_position_entries">
-        <item>To end of view</item>
-        <item>To start of view</item>
-    </string-array>
-    <string-array name="traffic_style_entries">
-        <item>Normal</item>
-        <item>Bold</item>
-        <item>Italic</item>
-        <item>Bold italic</item>
-    </string-array>
-    <string-array name="traffic_style_entry_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
     <string-array name="display_timeout_entries">
         <item>5 seconds</item>
         <item>10 seconds (default)</item>

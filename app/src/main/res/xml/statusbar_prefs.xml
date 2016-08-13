@@ -3,8 +3,8 @@
     xmlns:phronesis="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory android:title="StatusBar Items Customization">
         <PreferenceScreen
-            android:summary="Customize the layout of the StatusBar"
-            android:title="Change StatusBar Layout">
+            android:summary="Customize icon layout and visibility"
+            android:title="Icon Layout and Visibility">
             <PreferenceCategory android:title="Statusbar Icon Visibility">
                 <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
                     android:defaultValue="true"
@@ -39,7 +39,6 @@
             </PreferenceCategory>
         </PreferenceScreen>
     </PreferenceCategory>
-    /
     <PreferenceCategory android:title="Immersive Mode">
         <com.wubydax.romcontrol.v2.prefs.MyListPreference
             android:defaultValue="immersive.full"
@@ -86,8 +85,8 @@
             android:key="modcfg_statusbar_colors"
             android:summaryOff="Using custom colors"
             android:summaryOn="Stock color set"
-            android:title="Select Statusbar stock or custom color"
-            phronesis:isSilent="false"
+            android:title="Set icon to use stock or custom color"
+            phronesis:isSilent="true"
             phronesis:packageNameToKill="com.android.systemui" />
         <com.wubydax.romcontrol.v2.prefs.GlobalRestorePreference
             android:icon="@drawable/restorecolour"
